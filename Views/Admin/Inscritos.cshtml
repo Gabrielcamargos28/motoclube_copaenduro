@@ -1,0 +1,297 @@
+@{
+    ViewData["Title"] = "Gerenciar Inscritos";
+    Layout = "_AdminLayout";
+    var etapas = ViewBag.Etapas as List<MotoClubeCerrado.Models.Etapa>;
+}
+
+<div class="container-fluid">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <h2>Gerenciar Inscritos</h2>
+            <p class="text-muted">Lista completa de inscrições com opção de marcar pagamento</p>
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-header">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5 class="mb-0">Filtros</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="filtro-etapa" class="form-label"><strong>Filtrar por Etapa:</strong></label>
+                    <select class="form-control" id="filtro-etapa">
+                        <option value="0">Todas as etapas</option>
+                        @if (etapas != null && etapas.Any())
+                        {
+                            foreach (var etapa in etapas)
+                            {
+                                <option value="@etapa.Id">@etapa.Nome - @etapa.DataEvento?.ToString("dd/MM/yyyy")</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-md-8 d-flex align-items-end">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-success" id="btn-filtrar-pagos">
+                            <i class="fas fa-check-circle"></i> Pagos
+                        </button>
+                        <button type="button" class="btn btn-outline-warning" id="btn-filtrar-pendentes">
+                            <i class="fas fa-clock"></i> Pendentes
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary active" id="btn-filtrar-todos">
+                            <i class="fas fa-list"></i> Todos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table id="tabelaInscritos" class="table table-striped table-hover table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Etapa</th>
+                            <th>Categoria</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Cidade/UF</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Valor</th>
+                            <th>Data Inscrição</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .badge-pago {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .badge-pendente {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .btn-pagamento {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        #tabelaInscritos {
+            font-size: 0.9rem;
+        }
+
+        #tabelaInscritos th {
+            white-space: nowrap;
+        }
+
+        .btn-group .btn {
+            margin-right: 5px;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var filtroStatus = 'todos'; // 'todos', 'pagos', 'pendentes'
+
+            var table = $('#tabelaInscritos').DataTable({
+                "processing": true,
+                "serverSide": false,
+                "ajax": {
+                    "url": "/Admin/PesquisaInscritosAdmin",
+                    "type": "GET",
+                    "data": function (d) {
+                        var etapaId = $('#filtro-etapa').val();
+                        if (etapaId && etapaId !== '0') {
+                            d.idEtapa = parseInt(etapaId);
+                        } else {
+                            d.idEtapa = 0;
+                        }
+                    },
+                    "dataSrc": "data"
+                },
+                "columns": [
+                    { "data": "etapa" },
+                    { "data": "categoria" },
+                    { "data": "nome" },
+                    {
+                        "data": "cpf",
+                        "render": function (data) {
+                            // Formatar CPF: 000.000.000-00
+                            if (data && data.length === 11) {
+                                return data.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+                            }
+                            return data;
+                        }
+                    },
+                    {
+                        "data": null,
+                        "render": function (data, type, row) {
+                            return row.cidade + '/' + row.uf;
+                        }
+                    },
+                    {
+                        "data": "telefone",
+                        "render": function (data) {
+                            // Formatar telefone
+                            if (data && data.length === 11) {
+                                return data.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+                            } else if (data && data.length === 10) {
+                                return data.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+                            }
+                            return data;
+                        }
+                    },
+                    { "data": "email" },
+                    {
+                        "data": "valor",
+                        "render": function (data) {
+                            return 'R$ ' + parseFloat(data).toFixed(2).replace('.', ',');
+                        }
+                    },
+                    { "data": "dataInscricao" },
+                    {
+                        "data": "pagamento",
+                        "render": function (data) {
+                            if (data == 1) {
+                                return '<span class="badge badge-success"><i class="fas fa-check"></i> Pago</span>';
+                            } else {
+                                return '<span class="badge badge-warning"><i class="fas fa-clock"></i> Pendente</span>';
+                            }
+                        }
+                    },
+                    {
+                        "data": null,
+                        "orderable": false,
+                        "render": function (data, type, row) {
+                            var token = $('input[name="__RequestVerificationToken"]').val();
+                            var btnClass = row.pagamento == 1 ? 'btn-warning' : 'btn-success';
+                            var btnText = row.pagamento == 1 ? '<i class="fas fa-undo"></i> Marcar Pendente' : '<i class="fas fa-check"></i> Marcar Pago';
+
+                            return '<button class="btn ' + btnClass + ' btn-pagamento btn-toggle-pagamento" ' +
+                                'data-id="' + row.id + '" ' +
+                                'data-token="' + token + '">' +
+                                btnText +
+                                '</button>';
+                        }
+                    }
+                ],
+                "order": [[8, "desc"]], // Ordenar por data de inscrição (mais recente primeiro)
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json"
+                },
+                "pageLength": 25,
+                "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Todos"]],
+                "rowCallback": function(row, data) {
+                    // Aplicar filtro de status
+                    var mostrar = true;
+                    if (filtroStatus === 'pagos' && data.pagamento != 1) {
+                        mostrar = false;
+                    } else if (filtroStatus === 'pendentes' && data.pagamento == 1) {
+                        mostrar = false;
+                    }
+
+                    if (!mostrar) {
+                        $(row).hide();
+                    }
+                }
+            });
+
+            // Recarregar quando mudar filtro de etapa
+            $('#filtro-etapa').on('change', function () {
+                table.ajax.reload();
+            });
+
+            // Filtros de status
+            $('#btn-filtrar-todos').on('click', function() {
+                filtroStatus = 'todos';
+                $('.btn-group .btn').removeClass('active');
+                $(this).addClass('active');
+                table.draw();
+            });
+
+            $('#btn-filtrar-pagos').on('click', function() {
+                filtroStatus = 'pagos';
+                $('.btn-group .btn').removeClass('active');
+                $(this).addClass('active');
+                table.draw();
+            });
+
+            $('#btn-filtrar-pendentes').on('click', function() {
+                filtroStatus = 'pendentes';
+                $('.btn-group .btn').removeClass('active');
+                $(this).addClass('active');
+                table.draw();
+            });
+
+            // Toggle pagamento
+            $('#tabelaInscritos').on('click', '.btn-toggle-pagamento', function () {
+                var btn = $(this);
+                var inscritoId = btn.data('id');
+                var token = btn.data('token');
+
+                if (confirm('Deseja alterar o status de pagamento desta inscrição?')) {
+                    btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Processando...');
+
+                    $.ajax({
+                        url: '/Admin/TogglePagamento/' + inscritoId,
+                        type: 'POST',
+                        data: {
+                            __RequestVerificationToken: token
+                        },
+                        success: function (response) {
+                            if (response.success) {
+                                // Recarregar a tabela
+                                table.ajax.reload(null, false);
+
+                                // Mostrar notificação
+                                var status = response.pagamento == 1 ? 'PAGO' : 'PENDENTE';
+                                alert('Status alterado para: ' + status);
+                            } else {
+                                alert('Erro ao alterar status de pagamento');
+                                btn.prop('disabled', false);
+                            }
+                        },
+                        error: function () {
+                            alert('Erro ao processar a requisição');
+                            btn.prop('disabled', false);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+    @Html.AntiForgeryToken()
+}

@@ -297,6 +297,78 @@ http://localhost:5019/Admin/Login
             return RedirectToAction(nameof(Etapas));
         }
 
+        // GET: Admin/Inscritos
+        [Authorize]
+        public async Task<IActionResult> Inscritos()
+        {
+            var etapas = await _context.Etapas
+                .Where(e => e.Ativo)
+                .OrderByDescending(e => e.DataEvento)
+                .ToListAsync();
+
+            ViewBag.Etapas = etapas;
+            return View();
+        }
+
+        // GET: Admin/PesquisaInscritosAdmin
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> PesquisaInscritosAdmin(int? idEtapa = null)
+        {
+            try
+            {
+                bool mostrarTodas = (idEtapa == 0 || idEtapa == null);
+
+                var query = _context.Inscritos
+                    .Include(i => i.Categoria)
+                    .Include(i => i.Etapa)
+                    .AsQueryable();
+
+                if (!mostrarTodas && idEtapa.HasValue)
+                {
+                    query = query.Where(i => i.IdEtapa == idEtapa.Value);
+                }
+
+                var inscritos = await query
+                    .OrderByDescending(i => i.DataInscricao)
+                    .Select(i => new
+                    {
+                        id = i.Id,
+                        nome = i.Nome,
+                        cpf = i.Cpf,
+                        telefone = i.Telefone,
+                        cidade = i.Cidade,
+                        uf = i.Uf,
+                        email = i.Email,
+                        valor = i.Valor,
+                        pagamento = i.Pagamento,
+                        dataInscricao = i.DataInscricao.ToString("dd/MM/yyyy HH:mm"),
+                        categoria = i.Categoria!.Nome,
+                        etapa = i.Etapa!.Nome
+                    })
+                    .ToListAsync();
+
+                return Json(new
+                {
+                    draw = 0,
+                    recordsTotal = inscritos.Count,
+                    recordsFiltered = inscritos.Count,
+                    data = inscritos
+                });
+            }
+            catch (Exception ex)
+            {
+                return Json(new
+                {
+                    draw = 0,
+                    recordsTotal = 0,
+                    recordsFiltered = 0,
+                    data = new List<object>(),
+                    error = ex.Message
+                });
+            }
+        }
+
         // GET: Admin/InscritosEtapa/5
         [Authorize]
         public async Task<IActionResult> InscritosEtapa(int id)
