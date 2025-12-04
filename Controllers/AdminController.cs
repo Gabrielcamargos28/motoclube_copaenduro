@@ -23,6 +23,13 @@ namespace MotoClubeCerrado.Controllers
             _context = context;
         }
 
+        // GET: Admin/Test (para debug)
+        [AllowAnonymous]
+        public IActionResult Test()
+        {
+            return Content("AdminController está funcionando! Roteamento OK.");
+        }
+
         // GET: Admin/Login
         [AllowAnonymous]
         public IActionResult Login(string? returnUrl = null)
@@ -37,18 +44,38 @@ namespace MotoClubeCerrado.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
         {
+            Console.WriteLine("=== POST Login chamado ===");
+            Console.WriteLine($"Email: {model?.Email}");
+            Console.WriteLine($"Password length: {model?.Password?.Length ?? 0}");
+            Console.WriteLine($"RememberMe: {model?.RememberMe}");
+            Console.WriteLine($"ModelState.IsValid: {ModelState.IsValid}");
+
             ViewData["ReturnUrl"] = returnUrl;
+
+            if (!ModelState.IsValid)
+            {
+                Console.WriteLine("ModelState inválido:");
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine($"  - {error.ErrorMessage}");
+                }
+            }
 
             if (ModelState.IsValid)
             {
+                Console.WriteLine($"Tentando login com email: {model.Email}");
+
                 var result = await _signInManager.PasswordSignInAsync(
                     model.Email,
                     model.Password,
                     model.RememberMe,
                     lockoutOnFailure: true);
 
+                Console.WriteLine($"Login result - Succeeded: {result.Succeeded}, IsLockedOut: {result.IsLockedOut}, RequiresTwoFactor: {result.RequiresTwoFactor}");
+
                 if (result.Succeeded)
                 {
+                    Console.WriteLine("Login bem-sucedido! Redirecionando...");
                     if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                     {
                         return Redirect(returnUrl);
@@ -57,16 +84,19 @@ namespace MotoClubeCerrado.Controllers
                 }
                 if (result.IsLockedOut)
                 {
+                    Console.WriteLine("Conta bloqueada");
                     ModelState.AddModelError(string.Empty, "Conta bloqueada temporariamente. Tente novamente mais tarde.");
                     return View(model);
                 }
                 else
                 {
+                    Console.WriteLine("Email ou senha inválidos");
                     ModelState.AddModelError(string.Empty, "Email ou senha inválidos.");
                     return View(model);
                 }
             }
 
+            Console.WriteLine("Retornando view com model");
             return View(model);
         }
 
