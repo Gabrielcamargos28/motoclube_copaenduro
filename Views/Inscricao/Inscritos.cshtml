@@ -69,6 +69,26 @@
 
 @section Styles {
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
+    <style>
+        /* Estilização do select nativo */
+        #filtro-etapa {
+            appearance: auto;
+            -webkit-appearance: menulist;
+            -moz-appearance: menulist;
+            background-color: white;
+            border: 1px solid #ced4da;
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #filtro-etapa:focus {
+            outline: none;
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+    </style>
 }
 
 @section Scripts {
@@ -76,6 +96,12 @@
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
     <script>
         $(document).ready(function () {
+            // Remover nice-select do filtro de etapa
+            if ($('#filtro-etapa').next('.nice-select').length) {
+                $('#filtro-etapa').next('.nice-select').remove();
+                $('#filtro-etapa').show();
+            }
+
             var table = $('#idTabelaInscritos').DataTable({
                 "processing": true,
                 "serverSide": false,
@@ -84,8 +110,12 @@
                     "type": "GET",
                     "data": function(d) {
                         var etapaId = $('#filtro-etapa').val();
-                        if (etapaId) {
-                            d.idEtapa = etapaId;
+                        if (etapaId && etapaId !== '') {
+                            // Envia o ID da etapa selecionada
+                            d.idEtapa = parseInt(etapaId);
+                        } else {
+                            // Quando vazio, envia 0 para indicar "Todas as etapas"
+                            d.idEtapa = 0;
                         }
                     },
                     "dataSrc": "data"
@@ -122,6 +152,7 @@
 
             // Recarregar tabela quando mudar o filtro de etapa
             $('#filtro-etapa').on('change', function() {
+                console.log('Filtro de etapa mudado para:', $(this).val());
                 table.ajax.reload();
             });
 

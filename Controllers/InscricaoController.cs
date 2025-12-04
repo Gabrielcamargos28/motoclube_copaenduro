@@ -121,8 +121,11 @@ namespace MotoClubeCerrado.Controllers
         {
             try
             {
-                // Se não informar etapa, pega a mais recente ativa
-                if (idEtapa == null)
+                // Se idEtapa for 0, significa "Todas as etapas"
+                bool mostrarTodas = (idEtapa == 0);
+
+                // Se não informar etapa e não for "todas", pega a mais recente ativa
+                if (idEtapa == null && !mostrarTodas)
                 {
                     var etapaAtual = await _context.Etapas
                         .Where(e => e.Ativo)
@@ -132,7 +135,7 @@ namespace MotoClubeCerrado.Controllers
                     idEtapa = etapaAtual?.Id;
                 }
 
-                if (idEtapa == null)
+                if (idEtapa == null && !mostrarTodas)
                 {
                     return Json(new
                     {
@@ -144,10 +147,18 @@ namespace MotoClubeCerrado.Controllers
                     });
                 }
 
-                var inscritos = await _context.Inscritos
+                var query = _context.Inscritos
                     .Include(i => i.Categoria)
                     .Include(i => i.Etapa)
-                    .Where(i => i.IdEtapa == idEtapa && i.Visivel == 1)
+                    .Where(i => i.Visivel == 1);
+
+                // Se não for "todas", filtra pela etapa específica
+                if (!mostrarTodas && idEtapa.HasValue)
+                {
+                    query = query.Where(i => i.IdEtapa == idEtapa.Value);
+                }
+
+                var inscritos = await query
                     .OrderBy(i => i.Categoria!.Nome)
                     .ThenBy(i => i.Nome)
                     .Select(i => new
