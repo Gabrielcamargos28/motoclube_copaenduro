@@ -30,6 +30,70 @@ namespace MotoClubeCerrado.Controllers
             return Content("AdminController está funcionando! Roteamento OK.");
         }
 
+        // GET: Admin/Setup (criar usuário admin com senha correta)
+        [AllowAnonymous]
+        public async Task<IActionResult> Setup()
+        {
+            try
+            {
+                // Verificar se já existe um admin
+                var existingAdmin = await _userManager.FindByEmailAsync("admin@copacerrado.com.br");
+
+                if (existingAdmin != null)
+                {
+                    // Deletar o admin existente para recriar com senha correta
+                    await _userManager.DeleteAsync(existingAdmin);
+                }
+
+                // Criar novo usuário admin
+                var adminUser = new ApplicationUser
+                {
+                    UserName = "admin@copacerrado.com.br",
+                    Email = "admin@copacerrado.com.br",
+                    EmailConfirmed = true,
+                    NomeCompleto = "Administrador",
+                    DataCriacao = DateTime.Now
+                };
+
+                // Criar usuário com senha - o UserManager vai gerar o hash correto
+                var result = await _userManager.CreateAsync(adminUser, "Admin@123");
+
+                if (result.Succeeded)
+                {
+                    // Criar role Admin se não existir
+                    var roleManager = HttpContext.RequestServices.GetRequiredService<RoleManager<IdentityRole>>();
+                    if (!await roleManager.RoleExistsAsync("Admin"))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole("Admin"));
+                    }
+
+                    // Adicionar usuário à role Admin
+                    await _userManager.AddToRoleAsync(adminUser, "Admin");
+
+                    return Content(@"
+✅ USUÁRIO ADMIN CRIADO COM SUCESSO!
+
+📧 Email: admin@copacerrado.com.br
+🔐 Senha: Admin@123
+
+Agora você pode fazer login em:
+http://localhost:5019/Admin/Login
+
+⚠️ IMPORTANTE: Por segurança, comente ou remova esta action /Admin/Setup depois de usar!
+                    ");
+                }
+                else
+                {
+                    var errors = string.Join("\n", result.Errors.Select(e => $"- {e.Description}"));
+                    return Content($"❌ ERRO ao criar usuário admin:\n\n{errors}");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Content($"❌ EXCEÇÃO ao criar usuário admin:\n\n{ex.Message}\n\n{ex.StackTrace}");
+            }
+        }
+
         // GET: Admin/Login
         [AllowAnonymous]
         public IActionResult Login(string? returnUrl = null)
