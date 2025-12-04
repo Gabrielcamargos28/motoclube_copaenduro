@@ -18,13 +18,13 @@ namespace MotoClubeCerrado.Controllers
         public async Task<IActionResult> Index()
         {
             var categorias = await _context.Categorias.Where(c => c.Ativo).ToListAsync();
-            var etapaAtual = await _context.Etapas
+            var etapasDisponiveis = await _context.Etapas
                 .Where(e => e.Ativo && e.InscricoesAbertas)
-                .OrderByDescending(e => e.Id)
-                .FirstOrDefaultAsync();
+                .OrderByDescending(e => e.DataEvento)
+                .ToListAsync();
 
             ViewBag.Categorias = categorias;
-            ViewBag.EtapaAtual = etapaAtual;
+            ViewBag.EtapasDisponiveis = etapasDisponiveis;
 
             return View();
         }
@@ -42,23 +42,24 @@ namespace MotoClubeCerrado.Controllers
                     return Json(new { success = false, message = "Dados inválidos: " + string.Join(", ", errors) });
                 }
 
-                // Buscar etapa ativa
-                var etapaAtual = await _context.Etapas
-                    .Where(e => e.Ativo && e.InscricoesAbertas)
-                    .OrderByDescending(e => e.Id)
-                    .FirstOrDefaultAsync();
+                // Validar se a etapa existe e está com inscrições abertas
+                var etapa = await _context.Etapas.FindAsync(inscrito.IdEtapa);
 
-                if (etapaAtual == null)
+                if (etapa == null)
                 {
-                    return Json(new { success = false, message = "Não há etapa com inscrições abertas no momento." });
+                    return Json(new { success = false, message = "Etapa inválida." });
                 }
 
-                inscrito.IdEtapa = etapaAtual.Id;
+                if (!etapa.InscricoesAbertas)
+                {
+                    return Json(new { success = false, message = "As inscrições para esta etapa estão fechadas." });
+                }
+
                 inscrito.DataInscricao = DateTime.Now;
 
                 // Gerar valor com centavos únicos para identificação
                 var ultimoInscrito = await _context.Inscritos
-                    .Where(i => i.IdEtapa == etapaAtual.Id)
+                    .Where(i => i.IdEtapa == inscrito.IdEtapa)
                     .OrderByDescending(i => i.Id)
                     .FirstOrDefaultAsync();
 
@@ -82,7 +83,7 @@ namespace MotoClubeCerrado.Controllers
 
                 return Json(new {
                     success = true,
-                    message = $"Inscrição realizada com sucesso! Valor para pagamento: R$ {inscrito.Valor:F2}",
+                    message = $"Inscrição realizada com sucesso na {etapa.Nome}! Valor para pagamento: R$ {inscrito.Valor:F2}",
                     valor = inscrito.Valor
                 });
             }
@@ -95,28 +96,34 @@ namespace MotoClubeCerrado.Controllers
         // GET: Inscricao/Inscritos
         public async Task<IActionResult> Inscritos()
         {
-            var etapaAtual = await _context.Etapas
+            var etapas = await _context.Etapas
                 .Where(e => e.Ativo)
-                .OrderByDescending(e => e.Id)
-                .FirstOrDefaultAsync();
+                .OrderByDescending(e => e.DataEvento)
+                .ToListAsync();
 
-            ViewBag.EtapaAtual = etapaAtual;
+            ViewBag.Etapas = etapas;
 
             return View();
         }
 
         // GET: API endpoint para DataTables
         [HttpGet]
-        public async Task<IActionResult> PesquisaInscritos()
+        public async Task<IActionResult> PesquisaInscritos(int? idEtapa = null)
         {
             try
             {
-                var etapaAtual = await _context.Etapas
-                    .Where(e => e.Ativo)
-                    .OrderByDescending(e => e.Id)
-                    .FirstOrDefaultAsync();
+                // Se não informar etapa, pega a mais recente ativa
+                if (idEtapa == null)
+                {
+                    var etapaAtual = await _context.Etapas
+                        .Where(e => e.Ativo)
+                        .OrderByDescending(e => e.DataEvento)
+                        .FirstOrDefaultAsync();
 
-                if (etapaAtual == null)
+                    idEtapa = etapaAtual?.Id;
+                }
+
+                if (idEtapa == null)
                 {
                     return Json(new
                     {
@@ -130,7 +137,8 @@ namespace MotoClubeCerrado.Controllers
 
                 var inscritos = await _context.Inscritos
                     .Include(i => i.Categoria)
-                    .Where(i => i.IdEtapa == etapaAtual.Id && i.Visivel == 1)
+                    .Include(i => i.Etapa)
+                    .Where(i => i.IdEtapa == idEtapa && i.Visivel == 1)
                     .OrderBy(i => i.Categoria!.Nome)
                     .ThenBy(i => i.Nome)
                     .Select(i => new
@@ -152,7 +160,8 @@ namespace MotoClubeCerrado.Controllers
                         pagamento = i.Pagamento,
                         visivel = i.Visivel,
                         dataInscricao = i.DataInscricao,
-                        categoria = i.Categoria!.Nome
+                        categoria = i.Categoria!.Nome,
+                        etapa = i.Etapa!.Nome
                     })
                     .ToListAsync();
 

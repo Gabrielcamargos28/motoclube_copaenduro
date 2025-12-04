@@ -1,7 +1,7 @@
 @{
     ViewData["Title"] = "Inscrição - Copa Cerrado de Enduro";
     var categorias = ViewBag.Categorias as List<MotoClubeCerrado.Models.Categoria>;
-    var etapaAtual = ViewBag.EtapaAtual as MotoClubeCerrado.Models.Etapa;
+    var etapasDisponiveis = ViewBag.EtapasDisponiveis as List<MotoClubeCerrado.Models.Etapa>;
 }
 
 <section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
@@ -22,7 +22,7 @@
             <div class="col-md-12">
                 <div class="box box-form-1">
                     <div class="box-form-header">
-                        <div class="box-form-title h2">@(etapaAtual?.Nome ?? "Inscrição")</div>
+                        <div class="box-form-title h2">Inscrição - Copa Cerrado de Enduro</div>
                         <div class="box-form-text">
                             <p>
                                 Para realizar o seu pagamento, favor realizar o Pix para a conta abaixo, lembrando que a identificação do piloto é feita através dos centavos, portanto deve ser feito o valor exato apresentado.
@@ -34,6 +34,27 @@
                     <div class="box-form-body">
                         <form id="frmInscricao" class="rd-form rd-mailform row row-15 row-gutters-14" method="post">
                             @Html.AntiForgeryToken()
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="idetapa">Etapa *</label>
+                                    <div class="form-validation-wrap">
+                                        <select class="form-control" id="inscricao-idetapa" name="idetapa" required>
+                                            @if (etapasDisponiveis != null && etapasDisponiveis.Any())
+                                            {
+                                                foreach (var etapa in etapasDisponiveis)
+                                                {
+                                                    <option value="@etapa.Id">@etapa.Nome - @etapa.DataEvento?.ToString("dd/MM/yyyy")</option>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <option value="">Nenhuma etapa disponível</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -175,6 +196,7 @@
 @section Styles {
     <style>
         /* Estilização dos selects nativos */
+        #inscricao-idetapa,
         #inscricao-idcategoria,
         #inscricao-uf {
             appearance: auto;
@@ -189,6 +211,7 @@
             cursor: pointer;
         }
 
+        #inscricao-idetapa:focus,
         #inscricao-idcategoria:focus,
         #inscricao-uf:focus {
             outline: none;
@@ -221,7 +244,7 @@
     <script>
         $(document).ready(function () {
             // Destruir nice-select nos selects do formulário para usar select nativo
-            $('#inscricao-idcategoria, #inscricao-uf').each(function() {
+            $('#inscricao-idetapa, #inscricao-idcategoria, #inscricao-uf').each(function() {
                 if ($(this).next('.nice-select').length) {
                     $(this).next('.nice-select').remove();
                     $(this).show();
@@ -235,6 +258,8 @@
                 btn.prop('disabled', true).text('Salvando...');
 
                 var formData = {
+                    IdEtapa: $('#inscricao-idetapa').val(),
+                    IdCategoria: $('#inscricao-idcategoria').val(),
                     Nome: $('#inscricao-nome').val(),
                     Cpf: $('#inscricao-cpf').val().replace(/\D/g, ''),
                     DataNascimento: $('#inscricao-datanascimento').val(),
@@ -243,8 +268,7 @@
                     Cidade: $('#inscricao-cidade').val(),
                     Uf: $('#inscricao-uf').val(),
                     Email: $('#inscricao-email').val(),
-                    Patrocinador: $('#inscricao-patrocinador').val(),
-                    IdCategoria: $('#inscricao-idcategoria').val()
+                    Patrocinador: $('#inscricao-patrocinador').val()
                 };
 
                 $.ajax({

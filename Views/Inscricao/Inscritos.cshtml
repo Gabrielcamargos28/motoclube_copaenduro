@@ -1,6 +1,6 @@
 @{
     ViewData["Title"] = "Inscritos - Copa Cerrado de Enduro";
-    var etapaAtual = ViewBag.EtapaAtual as MotoClubeCerrado.Models.Etapa;
+    var etapas = ViewBag.Etapas as List<MotoClubeCerrado.Models.Etapa>;
 }
 
 <section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
@@ -21,7 +21,7 @@
             <div class="col-md-12">
                 <div class="box box-form-1">
                     <div class="box-form-header">
-                        <div class="box-form-title h2">@(etapaAtual?.Nome ?? "Inscritos")</div>
+                        <div class="box-form-title h2">Inscritos - Copa Cerrado de Enduro</div>
                         <div class="box-form-text">
                             <p>
                                 Para realizar o seu pagamento, favor realizar o Pix para a conta abaixo, lembrando que a identificação do piloto é feita através dos centavos, portanto deve ser feito o valor exato apresentado.
@@ -31,10 +31,24 @@
                         </div>
                     </div>
                     <div class="box-form-body">
+                        <div class="mb-3">
+                            <label class="form-label" for="filtro-etapa"><strong>Filtrar por Etapa:</strong></label>
+                            <select class="form-control" id="filtro-etapa" style="max-width: 400px;">
+                                <option value="">Todas as etapas</option>
+                                @if (etapas != null && etapas.Any())
+                                {
+                                    foreach (var etapa in etapas)
+                                    {
+                                        <option value="@etapa.Id">@etapa.Nome - @etapa.DataEvento?.ToString("dd/MM/yyyy")</option>
+                                    }
+                                }
+                            </select>
+                        </div>
                         <div class="table-responsive">
                             <table id="idTabelaInscritos" class="table table-hover text-nowrap">
                                 <thead>
                                     <tr>
+                                        <th>Etapa</th>
                                         <th>Categoria</th>
                                         <th>Nome</th>
                                         <th>Cidade</th>
@@ -68,9 +82,16 @@
                 "ajax": {
                     "url": "/Inscricao/PesquisaInscritos",
                     "type": "GET",
+                    "data": function(d) {
+                        var etapaId = $('#filtro-etapa').val();
+                        if (etapaId) {
+                            d.idEtapa = etapaId;
+                        }
+                    },
                     "dataSrc": "data"
                 },
                 "columns": [
+                    { "data": "etapa" },
                     { "data": "categoria" },
                     { "data": "nome" },
                     { "data": "cidade" },
@@ -91,12 +112,17 @@
                         }
                     }
                 ],
-                "order": [[0, "asc"], [1, "asc"]],
+                "order": [[0, "desc"], [1, "asc"], [2, "asc"]],
                 "language": {
                     "url": "//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json"
                 },
                 "pageLength": 50,
                 "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Todos"]]
+            });
+
+            // Recarregar tabela quando mudar o filtro de etapa
+            $('#filtro-etapa').on('change', function() {
+                table.ajax.reload();
             });
 
             // Atualizar a cada 30 segundos
