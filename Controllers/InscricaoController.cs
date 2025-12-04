@@ -55,6 +55,15 @@ namespace MotoClubeCerrado.Controllers
                     return Json(new { success = false, message = "As inscrições para esta etapa estão fechadas." });
                 }
 
+                // Validar se já existe inscrição com o mesmo CPF nesta etapa
+                var cpfJaInscrito = await _context.Inscritos
+                    .AnyAsync(i => i.Cpf == inscrito.Cpf && i.IdEtapa == inscrito.IdEtapa);
+
+                if (cpfJaInscrito)
+                {
+                    return Json(new { success = false, message = $"CPF {inscrito.Cpf} já possui inscrição nesta etapa." });
+                }
+
                 inscrito.DataInscricao = DateTime.Now;
 
                 // Gerar valor com centavos únicos para identificação

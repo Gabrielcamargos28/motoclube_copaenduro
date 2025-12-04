@@ -50,6 +50,7 @@ CREATE TABLE IF NOT EXISTS inscritos (
     INDEX idx_cpf (cpf),
     INDEX idx_visivel (visivel),
     INDEX idx_pagamento (pagamento),
+    UNIQUE INDEX idx_cpf_etapa (cpf, id_etapa) COMMENT 'Previne inscrição duplicada do mesmo CPF na mesma etapa',
     FOREIGN KEY (id_categoria) REFERENCES categorias(id) ON DELETE RESTRICT,
     FOREIGN KEY (id_etapa) REFERENCES etapas(id) ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
