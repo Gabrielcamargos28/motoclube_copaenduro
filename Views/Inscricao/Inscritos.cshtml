@@ -1,0 +1,108 @@
+@{
+    ViewData["Title"] = "Inscritos - Copa Cerrado de Enduro";
+    var etapaAtual = ViewBag.EtapaAtual as MotoClubeCerrado.Models.Etapa;
+}
+
+<section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
+    <div class="container">
+        <h2 class="breadcrumb-section-title">Inscritos</h2>
+        <div class="breadcrumb">
+            <div class="breadcrumb-inner">
+                <div class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></div>
+                <div class="breadcrumb-item"><span>Inscritos</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-md bg-transparent">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-md-12">
+                <div class="box box-form-1">
+                    <div class="box-form-header">
+                        <div class="box-form-title h2">@(etapaAtual?.Nome ?? "Inscritos")</div>
+                        <div class="box-form-text">
+                            <p>
+                                Para realizar o seu pagamento, favor realizar o Pix para a conta abaixo, lembrando que a identificação do piloto é feita através dos centavos, portanto deve ser feito o valor exato apresentado.
+                                <br><strong>Alice Oliveira Seron</strong>
+                                <br><strong>Pix (celular): 34992342393</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-form-body">
+                        <div class="table-responsive">
+                            <table id="idTabelaInscritos" class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Categoria</th>
+                                        <th>Nome</th>
+                                        <th>Cidade</th>
+                                        <th class="text-center">Valor</th>
+                                        <th>Pagamento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
+}
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#idTabelaInscritos').DataTable({
+                "processing": true,
+                "serverSide": false,
+                "ajax": {
+                    "url": "/Inscricao/PesquisaInscritos",
+                    "type": "GET",
+                    "dataSrc": "data"
+                },
+                "columns": [
+                    { "data": "categoria" },
+                    { "data": "nome" },
+                    { "data": "cidade" },
+                    {
+                        "data": "valor",
+                        "className": "text-center",
+                        "render": function (data, type, row) {
+                            if (type === 'display') {
+                                return parseFloat(data).toFixed(2);
+                            }
+                            return data;
+                        }
+                    },
+                    {
+                        "data": "pagamento",
+                        "render": function (data, type, row) {
+                            return data == 1 ? 'Confirmado' : 'Pendente';
+                        }
+                    }
+                ],
+                "order": [[0, "asc"], [1, "asc"]],
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.13.7/i18n/pt-BR.json"
+                },
+                "pageLength": 50,
+                "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Todos"]]
+            });
+
+            // Atualizar a cada 30 segundos
+            setInterval(function () {
+                table.ajax.reload(null, false);
+            }, 30000);
+        });
+    </script>
+}

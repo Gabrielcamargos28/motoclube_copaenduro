@@ -1,0 +1,67 @@
+@model List<MotoClubeCerrado.Models.Etapa>
+@{
+    ViewData["Title"] = "Calendário - Copa Cerrado de Enduro";
+}
+
+<section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
+    <div class="container">
+        <h2 class="breadcrumb-section-title">Calendário</h2>
+        <div class="breadcrumb">
+            <div class="breadcrumb-inner">
+                <div class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></div>
+                <div class="breadcrumb-item"><span>Calendário</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-md bg-transparent">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Etapas Copa Cerrado de Enduro 2025</h2>
+                @if (Model != null && Model.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Etapa</th>
+                                    <th>Data</th>
+                                    <th>Local</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var etapa in Model)
+                                {
+                                    <tr>
+                                        <td>@etapa.Nome</td>
+                                        <td>@etapa.DataEvento?.ToString("dd/MM/yyyy")</td>
+                                        <td>@etapa.Local</td>
+                                        <td>
+                                            @if (etapa.InscricoesAbertas)
+                                            {
+                                                <span class="badge badge-success">Inscrições Abertas</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-secondary">Inscrições Encerradas</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info">
+                        Nenhuma etapa cadastrada no momento.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

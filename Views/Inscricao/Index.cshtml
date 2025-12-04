@@ -1,0 +1,226 @@
+@{
+    ViewData["Title"] = "Inscrição - Copa Cerrado de Enduro";
+    var categorias = ViewBag.Categorias as List<MotoClubeCerrado.Models.Categoria>;
+    var etapaAtual = ViewBag.EtapaAtual as MotoClubeCerrado.Models.Etapa;
+}
+
+<section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
+    <div class="container">
+        <h2 class="breadcrumb-section-title">Inscrição</h2>
+        <div class="breadcrumb">
+            <div class="breadcrumb-inner">
+                <div class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></div>
+                <div class="breadcrumb-item"><span>Inscrição</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-md bg-transparent">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-md-12">
+                <div class="box box-form-1">
+                    <div class="box-form-header">
+                        <div class="box-form-title h2">@(etapaAtual?.Nome ?? "Inscrição")</div>
+                        <div class="box-form-text">
+                            <p>
+                                Para realizar o seu pagamento, favor realizar o Pix para a conta abaixo, lembrando que a identificação do piloto é feita através dos centavos, portanto deve ser feito o valor exato apresentado.
+                                <br><strong>Alice Oliveira Seron</strong>
+                                <br><strong>Pix (celular): 34992342393</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-form-body">
+                        <form id="frmInscricao" class="rd-form rd-mailform row row-15 row-gutters-14" method="post">
+                            @Html.AntiForgeryToken()
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="idcategoria">Categoria Copa Cerrado *</label>
+                                    <div class="form-validation-wrap">
+                                        <select class="form-control" id="inscricao-idcategoria" name="idcategoria" required>
+                                            @if (categorias != null)
+                                            {
+                                                foreach (var categoria in categorias)
+                                                {
+                                                    <option value="@categoria.Id">@categoria.Nome</option>
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="nome">Nome Completo *</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-nome" type="text" name="nome" placeholder="Digite o seu nome" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="cpf">CPF *</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-cpf" type="text" name="cpf" placeholder="Digite o seu CPF (somente números)" maxlength="11" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="datanascimento">Data de nascimento *</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-datanascimento" type="date" name="datanascimento" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="instagram">Instagram</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-instagram" type="text" name="instagram" placeholder="Digite o seu Instagram (opcional)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="telefone">Telefone *</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-telefone" type="text" name="telefone" placeholder="Digite o seu telefone" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="form-label" for="cidade">Cidade *</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-cidade" type="text" name="cidade" placeholder="Digite a sua cidade" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label" for="uf">UF *</label>
+                                    <div class="form-validation-wrap">
+                                        <select class="form-control" id="inscricao-uf" name="uf" required>
+                                            <option value="MG" selected>Minas Gerais</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">E-mail *</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-email" type="email" name="email" placeholder="Digite o seu e-mail" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="patrocinador">Patrocinador</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-patrocinador" type="text" name="patrocinador" placeholder="Digite o seu patrocinador (opcional)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <button id="btnSalvarInscricao" class="btn btn-primary" type="submit">Salvar inscrição</button>
+                            </div>
+                        </form>
+                        <div class="form-output mt-3" id="form-output"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#frmInscricao').on('submit', function (e) {
+                e.preventDefault();
+
+                var btn = $('#btnSalvarInscricao');
+                btn.prop('disabled', true).text('Salvando...');
+
+                var formData = {
+                    Nome: $('#inscricao-nome').val(),
+                    Cpf: $('#inscricao-cpf').val().replace(/\D/g, ''),
+                    DataNascimento: $('#inscricao-datanascimento').val(),
+                    Instagram: $('#inscricao-instagram').val(),
+                    Telefone: $('#inscricao-telefone').val(),
+                    Cidade: $('#inscricao-cidade').val(),
+                    Uf: $('#inscricao-uf').val(),
+                    Email: $('#inscricao-email').val(),
+                    Patrocinador: $('#inscricao-patrocinador').val(),
+                    IdCategoria: $('#inscricao-idcategoria').val()
+                };
+
+                $.ajax({
+                    url: '/Inscricao/Cadastrar',
+                    type: 'POST',
+                    data: formData,
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            $('#form-output').html('<div class="alert alert-success">' + response.message + '</div>');
+                            $('#frmInscricao')[0].reset();
+                        } else {
+                            $('#form-output').html('<div class="alert alert-danger">' + response.message + '</div>');
+                        }
+                        btn.prop('disabled', false).text('Salvar inscrição');
+                    },
+                    error: function () {
+                        $('#form-output').html('<div class="alert alert-danger">Erro ao processar inscrição. Tente novamente.</div>');
+                        btn.prop('disabled', false).text('Salvar inscrição');
+                    }
+                });
+            });
+
+            // Máscara para CPF
+            $('#inscricao-cpf').on('input', function () {
+                this.value = this.value.replace(/\D/g, '');
+            });
+        });
+    </script>
+}
