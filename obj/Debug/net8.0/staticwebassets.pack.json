@@ -1,0 +1,2197 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MotoClubeCerrado.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MotoClubeCerrado.1enlthccks.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\custom-animation.css",
+      "PackagePath": "staticwebassets\\assets\\css\\custom-animation.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\flaticon_mycollection.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon_mycollection.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\flaticon_xoft.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon_xoft.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\font-awesome-pro.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome-pro.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\hover-reveal.css",
+      "PackagePath": "staticwebassets\\assets\\css\\hover-reveal.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\meanmenu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\meanmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\spacing.css",
+      "PackagePath": "staticwebassets\\assets\\css\\spacing.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\swiper-bundle.css",
+      "PackagePath": "staticwebassets\\assets\\css\\swiper-bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\2aalteracaoestatuto.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\2aalteracaoestatuto.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_015 SEC DE ESPORTES.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_015 SEC DE ESPORTES.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_01_Prefeitura_FIM_alvara.doc",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_01_Prefeitura_FIM_alvara.doc"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_01_Prefeitura_FIM_alvara.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_01_Prefeitura_FIM_alvara.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_02_Camara_vereadores_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_02_Camara_vereadores_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_03_PM_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_03_PM_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_03_SEC DE ESPORTES VALORES.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_03_SEC DE ESPORTES VALORES.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_03_SEC DE ESPORTES.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_03_SEC DE ESPORTES.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_04_ambulancia_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_04_ambulancia_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_05_TRANSITO.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_05_TRANSITO.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_06_PM_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_06_PM_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_07_CIVIL_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_07_CIVIL_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_08_SEC DE OBRAS.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_08_SEC DE OBRAS.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_09_DAEPA.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_09_DAEPA.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_10_Prefeitura_FIM_agradecimento.doc",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_10_Prefeitura_FIM_agradecimento.doc"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_11_Camara_vereadores_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_11_Camara_vereadores_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_12_PM_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_12_PM_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_13_TRANSITO.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_13_TRANSITO.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_14_ambulancia_FIM.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_14_ambulancia_FIM.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_16_SEC DE OBRAS.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_16_SEC DE OBRAS.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_17_DAEPA.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_17_DAEPA.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_18_SEC DE ESPORTES LATINO.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_18_SEC DE ESPORTES LATINO.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_19_SEC CULTURA.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_19_SEC CULTURA.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_20_ESPORTES_FESTIVAL.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_20_ESPORTES_FESTIVAL.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_21_ESPORTES_FESTIVAL_agradecimento.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_21_ESPORTES_FESTIVAL_agradecimento.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_22_alvara_prefeito.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_22_alvara_prefeito.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_23_PM_Latino.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_23_PM_Latino.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_24_Delegado_Latino.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_24_Delegado_Latino.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_25_SESTRAN.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_25_SESTRAN.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_26_camara.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_26_camara.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_27_ambulancia.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_27_ambulancia.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_28_DAEPA.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_28_DAEPA.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_29_esportes.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_29_esportes.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_30_obras.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_30_obras.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_31_obras2.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_31_obras2.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_32_alvara_prefeito XC.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_32_alvara_prefeito XC.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_33_PM_XC.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_33_PM_XC.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_34_SESTRAN_xc.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_34_SESTRAN_xc.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\Oficio 2025_35_ambulancia_xc.docx",
+      "PackagePath": "staticwebassets\\assets\\docs\\Oficio 2025_35_ambulancia_xc.docx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\ata2017.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\ata2017.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\ata2024.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\ata2024.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\carta_de_invitacion.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\carta_de_invitacion.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\convocacaomotoclube2024_2.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\convocacaomotoclube2024_2.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\declaracaoprocessovotacao.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\declaracaoprocessovotacao.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\editalconvocacao.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\editalconvocacao.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\ficha_de_inscripcion.xlsx",
+      "PackagePath": "staticwebassets\\assets\\docs\\ficha_de_inscripcion.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\listapresenca.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\listapresenca.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\reglamento_particular.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\reglamento_particular.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\docs\\termodeferimento.pdf",
+      "PackagePath": "staticwebassets\\assets\\docs\\termodeferimento.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-duotone-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-duotone-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-duotone-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-duotone-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-duotone-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-duotone-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-duotone-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-duotone-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-light-300.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-light-300.eot"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-light-300.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-light-300.woff"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\flaticon_mycollection.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_mycollection.eot"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\flaticon_mycollection.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_mycollection.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\flaticon_mycollection.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_mycollection.woff"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\fonts\\flaticon_mycollection.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon_mycollection.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-3-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-3-img.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-3-shap-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-3-shap-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-3-shap-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-3-shap-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-3-shap-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-3-shap-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-3-shap-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-3-shap-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-3-shap-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-3-shap-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\about-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\cta-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\cta-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\cta-shape-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\cta-shape-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\icon-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\icon-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\icon-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\icon-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\organograma.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\organograma.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-2-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-5-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-5-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\shape-5-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\shape-5-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-2-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-2-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-2-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-2-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-4-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-4-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-4-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-4-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-4-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-4-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\about\\thumb-sm.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\thumb-sm.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\avatar\\avata-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatar\\avata-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\avatar\\avatar-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatar\\avatar-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\avatar\\avatar-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatar\\avatar-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\avatar\\avatar-3-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatar\\avatar-3-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-1-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-details-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-details-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-details-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-details-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-details-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-sm-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-sm-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-sm-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-sm-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\blog-sidebar-sm-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-sidebar-sm-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\blog\\shape-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\shape-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\brand\\brand-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand\\brand-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\breadcrumb\\breadcrumb.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\breadcrumb\\breadcrumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\shape-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\shape-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\shape-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\shape-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\thumb-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\thumb-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\career\\thumb-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\career\\thumb-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\category-4-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-4-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\category-4-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-4-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\category-4-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-4-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\category-4-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-4-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\category-4-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-4-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\inner.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\inner.svg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\shape-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\shape-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\category\\title.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\title.svg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\choose-2-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\choose-2-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\choose-2-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\choose-2-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-10.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-7.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-8.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\choose\\shape-1-9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\choose\\shape-1-9.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\class\\class-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\class\\class-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\class\\class-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\class\\class-1-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\class\\class-1-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\class\\class-1-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\class\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\class\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\class\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\class\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\bg-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\bg-1-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\bg-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\bg-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-1-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-1-7.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\shape-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\shape-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\signup.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\signup.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\contact\\thumb-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\contact\\thumb-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\avata-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\avata-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\course-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\course-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-1-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\course-1-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-1-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\course-1-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-1-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\course-1-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-1-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\course-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\details.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\shape-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\shape-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\course\\shape-1-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\shape-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\declaracao.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\declaracao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\BrunoCesarBarros.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\BrunoCesarBarros.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\CleuzaMariaBento.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\CleuzaMariaBento.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\DanielReis.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\DanielReis.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\DanielleFurtadoSilva.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\DanielleFurtadoSilva.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\FabricioCortezMenezes.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\FabricioCortezMenezes.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\LeandroJoseVieira.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\LeandroJoseVieira.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\LucioMauroAfonso.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\LucioMauroAfonso.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\RodrigoFerreira.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\RodrigoFerreira.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\diretoria\\ThiagoSouzaAlves.JPG",
+      "PackagePath": "staticwebassets\\assets\\img\\diretoria\\ThiagoSouzaAlves.JPG"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\error\\error.png",
+      "PackagePath": "staticwebassets\\assets\\img\\error\\error.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\details-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\details-sm.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\details-sm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\event-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\event-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\event-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\event-1-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\event-1-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\event-1-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\shape-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\shape-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\shape-1-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\shape-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\event\\thumb-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\event\\thumb-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\faq\\faq-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\faq\\faq-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\faq\\faq-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\faq\\faq-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\faq\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\faq\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\faq\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\faq\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\faq\\thumb-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\faq\\thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\faq\\thumb-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\faq\\thumb-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\feature\\bg-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\bg-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\feature\\feature-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\feature\\feature-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\bg-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\bg-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\thumb-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\thumb-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\thumb-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\thumb-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\thumb-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\thumb-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\thumb-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\thumb-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\thumb-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\thumb-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\footer\\thumb-1-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer\\thumb-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\funfact\\bg-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\funfact\\bg-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\funfact\\funfact-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\funfact\\funfact-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\funfact\\icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\funfact\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\funfact\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\funfact\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\funfact\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\funfact\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\thumb-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\thumb-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\thumb-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\thumb-1-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\thumb-1-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\thumb-1-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\gallery\\thumb-1-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\thumb-1-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-client-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-client-img.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-img.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-shape1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-shape1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-shape2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-shape2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-shape3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-shape3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-shape4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-shape4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-3-shape5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-3-shape5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-4-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-4-img.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-4-shape1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-4-shape1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-bg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\hero-bg-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\hero-bg-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\img.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-7.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-2-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-2-8.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-5-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-5-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-5-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-5-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-5-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-5-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\hero\\shape-5-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\shape-5-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\about\\img\\about-6-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\about\\img\\about-6-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\about\\shape\\about-6-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\about\\shape\\about-6-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\about\\shape\\about-6-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\about\\shape\\about-6-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\about\\shape\\about-6-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\about\\shape\\about-6-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\benifit\\shape\\union-6-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\benifit\\shape\\union-6-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\benifit\\shape\\union-6-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\benifit\\shape\\union-6-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\benifit\\thumb\\benifit-6-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\benifit\\thumb\\benifit-6-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\blog\\blog-6-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\blog\\blog-6-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\blog\\blog-6-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\blog\\blog-6-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\blog\\blog-6-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\blog\\blog-6-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\brand\\brand-6-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\brand\\brand-6-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\brand\\brand-6-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\brand\\brand-6-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\brand\\brand-6-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\brand\\brand-6-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\brand\\brand-6-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\brand\\brand-6-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\brand\\brand-6-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\brand\\brand-6-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\brand\\brand-6-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\brand\\brand-6-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\course\\course-6-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\course\\course-6-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\course\\course-6-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\course\\course-6-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\course\\course-6-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\course\\course-6-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\course\\course-6-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\course\\course-6-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\course\\course-6-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\course\\course-6-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\course\\course-6-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\course\\course-6-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\funfact\\thumb\\customer-Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\funfact\\thumb\\customer-Icon.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\funfact\\thumb\\customer.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\funfact\\thumb\\customer.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\funfact\\thumb\\funfact-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\funfact\\thumb\\funfact-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\hero\\img\\hero-6-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\hero\\img\\hero-6-img.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\hero\\shape\\hammar.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\hero\\shape\\hammar.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\hero\\shape\\hero-thumb-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\hero\\shape\\hero-thumb-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\instructor\\shape\\instra-shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\instructor\\shape\\instra-shape.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\instructor\\thumb\\insta-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\instructor\\thumb\\insta-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\instructor\\thumb\\insta-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\instructor\\thumb\\insta-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\instructor\\thumb\\insta-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\instructor\\thumb\\insta-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\instructor\\thumb\\insta-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\instructor\\thumb\\insta-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\logo\\f-orange-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\logo\\f-orange-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\testimonial\\avater\\test-avater.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\testimonial\\avater\\test-avater.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\testimonial\\shape\\l-shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\testimonial\\shape\\l-shape.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\testimonial\\shape\\r-shape.png",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\testimonial\\shape\\r-shape.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\home-6\\video\\video-bg-6-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-6\\video\\video-bg-6-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo - Copy.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo - Copy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-black.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-black.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-blue.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-blue.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-orange.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-orange.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-white.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo-yellow.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo-yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\logo\\logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\menu\\home-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\home-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\menu\\home-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\home-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\menu\\home-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\home-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\menu\\home-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\home-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\menu\\home-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\home-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\menu\\home-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\menu\\home-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\newsletter\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\newsletter\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\newsletter\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\newsletter\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\newsletter\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\newsletter\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\newsletter\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\newsletter\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\service\\sv-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\sv-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\service\\sv-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\sv-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-1-sm.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-1-sm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-2-sm.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-2-sm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-3-sm.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-3-sm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-shape-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-shape-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-shape-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-shape-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\slider\\slider-shape-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slider-shape-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\bg-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\bg-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\bg-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\bg-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\bg-5-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\bg-5-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\shape-5-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\shape-5-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-1-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-1-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-3-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-3-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-3-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-3-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-3-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-3-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-3-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-3-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\team\\team-inner.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\team-inner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\bg-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\bg-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\bg-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\bg-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\quot.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\quot.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\quote-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\quote-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-3-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-3-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-7.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\shape-5-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\shape-5-8.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\testimonial-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\testimonial-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\testimonial\\thumb-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testimonial\\thumb-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\value\\value-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\value\\value-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\value\\value-shape-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\value\\value-shape-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\value\\value-shape-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\value\\value-shape-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\value\\value-shape-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\value\\value-shape-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\value\\value-shape-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\value\\value-shape-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\value\\value-shape-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\value\\value-shape-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\bg-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\bg-1-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\bg-4-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\bg-4-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\bg-5-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\bg-5-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-5.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-6.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-1-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-1-7.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-4-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-4-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-5-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-5-1.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-5-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-5-2.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-5-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-5-3.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\shape-5-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\shape-5-4.png"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\video\\thumb-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video\\thumb-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\work\\work-1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\work\\work-1.svg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\work\\work-2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\work\\work-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\img\\work\\work-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\work\\work-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_accordion.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_animation.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_background.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_modal.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_preloader.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_preloader.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_search.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_search.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_section-title.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_section-title.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_spacing.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_tab.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_tab.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\components\\_theme.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\components\\_theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_about.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_blog.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_career.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_career.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_cart.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_cart.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_category.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_category.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_checkout.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_checkout.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_choose.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_choose.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_class.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_class.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_contact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_course.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_course.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_cta.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_cta.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_error.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_error.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_event.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_event.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_faq.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_faq.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_feature.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_feature.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_funfact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_funfact.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_gallery.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_gallery.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_hero.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_hero.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_mobilemenu.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_mobilemenu.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_newsletter.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_newsletter.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_price.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_price.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_slider.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_team.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_team.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_testimonial.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_testimonial.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_update-home.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_update-home.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_video.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_video.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\layout\\_work.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\layout\\_work.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\utils\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\utils\\_colors.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_colors.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\utils\\_index.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\utils\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\utils\\_root.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\scss\\utils\\_typography.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\utils\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\js\\countdown.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\hover-reveal.js",
+      "PackagePath": "staticwebassets\\js\\hover-reveal.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\imagesloaded-pkgd.js",
+      "PackagePath": "staticwebassets\\js\\imagesloaded-pkgd.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\isotope-pkgd.js",
+      "PackagePath": "staticwebassets\\js\\isotope-pkgd.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\js\\magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\nice-select.js",
+      "PackagePath": "staticwebassets\\js\\nice-select.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\purecounter.js",
+      "PackagePath": "staticwebassets\\js\\purecounter.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\js\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\js\\swiper-bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\waypoints.js",
+      "PackagePath": "staticwebassets\\js\\waypoints.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\js\\wow.js",
+      "PackagePath": "staticwebassets\\js\\wow.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MotoClubeCerrado.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MotoClubeCerrado.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MotoClubeCerrado.props",
+      "PackagePath": "build\\MotoClubeCerrado.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MotoClubeCerrado.props",
+      "PackagePath": "buildMultiTargeting\\MotoClubeCerrado.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MotoClubeCerrado.props",
+      "PackagePath": "buildTransitive\\MotoClubeCerrado.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
