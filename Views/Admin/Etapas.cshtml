@@ -1,0 +1,89 @@
+@model List<MotoClubeCerrado.Models.Etapa>
+@{
+    ViewData["Title"] = "Gerenciar Etapas";
+    Layout = "_AdminLayout";
+}
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fas fa-calendar-alt"></i> Etapas</span>
+        <a href="@Url.Action("CreateEtapa")" class="btn btn-light btn-sm">
+            <i class="fas fa-plus"></i> Nova Etapa
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data</th>
+                        <th>Local</th>
+                        <th class="text-center">Inscrições</th>
+                        <th class="text-center">Status</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var etapa in Model)
+                    {
+                        <tr>
+                            <td>@etapa.Nome</td>
+                            <td>@etapa.DataEvento?.ToString("dd/MM/yyyy")</td>
+                            <td>@etapa.Local</td>
+                            <td class="text-center">
+                                @if (etapa.InscricoesAbertas)
+                                {
+                                    <span class="badge bg-success">Abertas</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Fechadas</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (etapa.Ativo)
+                                {
+                                    <span class="badge bg-success">Ativa</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Inativa</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                <a href="@Url.Action("InscritosEtapa", new { id = etapa.Id })" class="btn btn-info btn-sm" title="Ver Inscritos">
+                                    <i class="fas fa-users"></i>
+                                </a>
+                                <a href="@Url.Action("EditEtapa", new { id = etapa.Id })" class="btn btn-warning btn-sm" title="Editar">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="deleteEtapa(@etapa.Id, '@etapa.Nome')" title="Excluir">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<form id="deleteForm" method="post" style="display:none;">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" id="deleteId" />
+</form>
+
+@section Scripts {
+    <script>
+        function deleteEtapa(id, nome) {
+            if (confirm(`Tem certeza que deseja excluir a etapa "${nome}"? Esta ação não pode ser desfeita.`)) {
+                document.getElementById('deleteId').value = id;
+                var form = document.getElementById('deleteForm');
+                form.action = '@Url.Action("DeleteEtapa")';
+                form.submit();
+            }
+        }
+    </script>
+}
