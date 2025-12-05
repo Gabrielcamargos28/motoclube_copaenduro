@@ -240,9 +240,14 @@
                             var btnPagIcon = row.pagamento == 1 ? 'fa-undo' : 'fa-dollar-sign';
                             var btnPagTitle = row.pagamento == 1 ? 'Desmarcar Pagamento' : 'Marcar como Pago';
 
-                            btns += '<button class="btn btn-sm ' + btnPagClass + ' btn-toggle-pagamento" ' +
+                            btns += '<button class="btn btn-sm ' + btnPagClass + ' btn-toggle-pagamento mr-1" ' +
                                 'data-id="' + row.id + '" data-token="' + token + '" title="' + btnPagTitle + '">' +
                                 '<i class="fas ' + btnPagIcon + '"></i></button>';
+
+                            // Botão de excluir
+                            btns += '<button class="btn btn-sm btn-danger btn-delete-inscrito" ' +
+                                'data-id="' + row.id + '" data-nome="' + row.nome + '" data-token="' + token + '" title="Excluir Inscrição">' +
+                                '<i class="fas fa-trash"></i></button>';
 
                             return btns;
                         }
@@ -362,6 +367,41 @@
                         },
                         error: function () {
                             alert('Erro ao processar a requisição');
+                            btn.prop('disabled', false);
+                        }
+                    });
+                }
+            });
+
+            // Excluir inscrição
+            $('#tabelaInscritos').on('click', '.btn-delete-inscrito', function () {
+                var btn = $(this);
+                var inscritoId = btn.data('id');
+                var inscritoNome = btn.data('nome');
+                var token = btn.data('token');
+
+                var confirmMsg = 'Tem certeza que deseja EXCLUIR a inscrição de "' + inscritoNome + '"?\n\n⚠️ Esta ação NÃO pode ser desfeita!';
+
+                if (confirm(confirmMsg)) {
+                    btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i>');
+
+                    $.ajax({
+                        url: '/Admin/DeleteInscrito/' + inscritoId,
+                        type: 'POST',
+                        data: {
+                            __RequestVerificationToken: token
+                        },
+                        success: function (response) {
+                            if (response.success) {
+                                table.ajax.reload(null, false);
+                                alert('✅ ' + response.message);
+                            } else {
+                                alert('❌ ' + response.message);
+                                btn.prop('disabled', false);
+                            }
+                        },
+                        error: function () {
+                            alert('❌ Erro ao processar a requisição de exclusão');
                             btn.prop('disabled', false);
                         }
                     });
