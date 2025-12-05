@@ -217,5 +217,62 @@ namespace MotoClubeCerrado.Controllers
 
             return View(etapas);
         }
+
+        // GET: Inscricao/Consultar
+        public IActionResult Consultar()
+        {
+            return View();
+        }
+
+        // POST: Inscricao/ConsultarInscricao
+        [HttpPost]
+        public async Task<IActionResult> ConsultarInscricao(string cpf)
+        {
+            try
+            {
+                // Limpar CPF (remover pontos e traços)
+                cpf = cpf?.Replace(".", "").Replace("-", "").Trim() ?? "";
+
+                if (string.IsNullOrEmpty(cpf) || cpf.Length != 11)
+                {
+                    return Json(new { success = false, message = "CPF inválido. Digite apenas números." });
+                }
+
+                var inscricoes = await _context.Inscritos
+                    .Include(i => i.Categoria)
+                    .Include(i => i.Etapa)
+                    .Where(i => i.Cpf == cpf)
+                    .OrderByDescending(i => i.DataInscricao)
+                    .Select(i => new
+                    {
+                        nome = i.Nome,
+                        cpf = i.Cpf,
+                        email = i.Email,
+                        telefone = i.Telefone,
+                        cidade = i.Cidade,
+                        uf = i.Uf,
+                        categoria = i.Categoria!.Nome,
+                        etapa = i.Etapa!.Nome,
+                        dataEtapa = i.Etapa!.DataEvento,
+                        valor = i.Valor,
+                        numeroPiloto = i.NumeroPiloto,
+                        dataInscricao = i.DataInscricao,
+                        pagamento = i.Pagamento,
+                        statusInscricao = i.StatusInscricao
+                    })
+                    .ToListAsync();
+
+                if (!inscricoes.Any())
+                {
+                    return Json(new { success = false, message = "Nenhuma inscrição encontrada para este CPF." });
+                }
+
+                return Json(new { success = true, inscricoes = inscricoes });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao consultar inscrição: " + ex.Message });
+            }
+        }
     }
 }

@@ -1,0 +1,292 @@
+@{
+    ViewData["Title"] = "Consultar Inscrição";
+}
+
+<section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
+    <div class="container">
+        <h2 class="breadcrumb-section-title">Consultar Inscrição</h2>
+        <div class="breadcrumb">
+            <div class="breadcrumb-inner">
+                <div class="breadcrumb-item"><a class="breadcrumb-link" href="/">Home</a></div>
+                <div class="breadcrumb-item"><span>Consultar Inscrição</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-md bg-transparent">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-md-12">
+                <div class="box box-form-1">
+                    <div class="box-form-header">
+                        <div class="box-form-title h2">Consulte sua Inscrição</div>
+                        <div class="box-form-text">
+                            <p>Digite seu CPF para verificar o status das suas inscrições</p>
+                        </div>
+                    </div>
+                    <div class="box-form-body">
+                        <form id="frmConsultar">
+                            <div class="row">
+                                <div class="col-md-6 offset-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label" for="cpf">CPF *</label>
+                                        <div class="form-validation-wrap">
+                                            <input class="form-control" id="cpf" type="text" placeholder="Digite apenas os números" maxlength="14" required>
+                                            <small class="form-text text-muted">Digite seu CPF (somente números)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <button id="btnConsultar" class="btn btn-primary" type="submit">
+                                        <i class="fas fa-search"></i> Consultar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div id="resultado" class="mt-4" style="display: none;">
+                            <h3 class="mb-3">Suas Inscrições</h3>
+                            <div id="lista-inscricoes"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .inscricao-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .inscricao-header {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .inscricao-header h4 {
+            margin: 0;
+            color: #333;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .status-pendente {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .status-aprovada {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .status-reprovada {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .pagamento-confirmado {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .pagamento-pendente {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .info-row {
+            margin: 10px 0;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+
+        .alert-info {
+            color: #004085;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+        }
+
+        .numero-piloto-destaque {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Máscara de CPF
+            $('#cpf').on('input', function () {
+                var value = this.value.replace(/\D/g, '');
+                if (value.length <= 11) {
+                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                    value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                }
+                this.value = value;
+            });
+
+            $('#frmConsultar').on('submit', function (e) {
+                e.preventDefault();
+
+                var cpf = $('#cpf').val().replace(/\D/g, '');
+
+                if (cpf.length !== 11) {
+                    alert('Por favor, digite um CPF válido com 11 dígitos.');
+                    return;
+                }
+
+                var btn = $('#btnConsultar');
+                btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Consultando...');
+
+                $.ajax({
+                    url: '/Inscricao/ConsultarInscricao',
+                    type: 'POST',
+                    data: { cpf: cpf },
+                    success: function (response) {
+                        if (response.success) {
+                            exibirInscricoes(response.inscricoes);
+                        } else {
+                            $('#resultado').show();
+                            $('#lista-inscricoes').html('<div class="alert alert-danger">' + response.message + '</div>');
+                        }
+                        btn.prop('disabled', false).html('<i class="fas fa-search"></i> Consultar');
+                    },
+                    error: function () {
+                        $('#resultado').show();
+                        $('#lista-inscricoes').html('<div class="alert alert-danger">Erro ao consultar inscrição. Tente novamente.</div>');
+                        btn.prop('disabled', false).html('<i class="fas fa-search"></i> Consultar');
+                    }
+                });
+            });
+
+            function exibirInscricoes(inscricoes) {
+                var html = '';
+
+                inscricoes.forEach(function (insc) {
+                    // Status da inscrição
+                    var statusInscricao = '';
+                    var statusClass = '';
+                    switch (insc.statusInscricao) {
+                        case 0:
+                            statusInscricao = 'Aguardando Aprovação';
+                            statusClass = 'status-pendente';
+                            break;
+                        case 1:
+                            statusInscricao = 'Aprovada';
+                            statusClass = 'status-aprovada';
+                            break;
+                        case 2:
+                            statusInscricao = 'Reprovada';
+                            statusClass = 'status-reprovada';
+                            break;
+                    }
+
+                    // Status do pagamento
+                    var statusPagamento = insc.pagamento == 1 ? 'Pagamento Confirmado' : 'Pagamento Pendente';
+                    var pagamentoClass = insc.pagamento == 1 ? 'pagamento-confirmado' : 'pagamento-pendente';
+
+                    var dataEtapa = insc.dataEtapa ? new Date(insc.dataEtapa).toLocaleDateString('pt-BR') : 'Não definida';
+                    var dataInscricao = new Date(insc.dataInscricao).toLocaleDateString('pt-BR');
+
+                    html += '<div class="inscricao-card">';
+                    html += '  <div class="inscricao-header">';
+                    html += '    <h4>' + insc.etapa + '</h4>';
+                    html += '    <div class="mt-2">';
+                    html += '      <span class="status-badge ' + statusClass + '">' + statusInscricao + '</span>';
+                    html += '      <span class="status-badge ' + pagamentoClass + '">' + statusPagamento + '</span>';
+                    html += '    </div>';
+                    html += '  </div>';
+
+                    html += '  <div class="info-row"><span class="info-label">Nome:</span> <span class="info-value">' + insc.nome + '</span></div>';
+                    html += '  <div class="info-row"><span class="info-label">Categoria:</span> <span class="info-value">' + insc.categoria + '</span></div>';
+
+                    if (insc.numeroPiloto) {
+                        html += '  <div class="info-row">';
+                        html += '    <span class="info-label">Número do Piloto:</span><br>';
+                        html += '    <div class="numero-piloto-destaque">' + insc.numeroPiloto + '</div>';
+                        html += '  </div>';
+                    }
+
+                    html += '  <div class="info-row"><span class="info-label">Data da Etapa:</span> <span class="info-value">' + dataEtapa + '</span></div>';
+                    html += '  <div class="info-row"><span class="info-label">Valor:</span> <span class="info-value">R$ ' + parseFloat(insc.valor).toFixed(2).replace('.', ',') + '</span></div>';
+                    html += '  <div class="info-row"><span class="info-label">Data da Inscrição:</span> <span class="info-value">' + dataInscricao + '</span></div>';
+
+                    // Mensagem informativa baseada no status
+                    if (insc.statusInscricao == 0) {
+                        html += '  <div class="alert alert-info mt-3">';
+                        html += '    <i class="fas fa-info-circle"></i> Sua inscrição está em análise. Aguarde a aprovação.';
+                        html += '  </div>';
+                    } else if (insc.statusInscricao == 1) {
+                        if (insc.pagamento == 0) {
+                            html += '  <div class="alert alert-info mt-3">';
+                            html += '    <i class="fas fa-check-circle"></i> Inscrição aprovada! Realize o pagamento do valor de R$ ' + parseFloat(insc.valor).toFixed(2).replace('.', ',') + ' para confirmar sua participação.';
+                            html += '    <br><strong>PIX:</strong> Alice Oliveira Seron - (34) 99234-2393';
+                            html += '  </div>';
+                        } else {
+                            html += '  <div class="alert alert-info mt-3">';
+                            html += '    <i class="fas fa-check-double"></i> Inscrição aprovada e pagamento confirmado! Você está inscrito na etapa.';
+                            html += '  </div>';
+                        }
+                    }
+
+                    html += '</div>';
+                });
+
+                $('#lista-inscricoes').html(html);
+                $('#resultado').show();
+
+                // Scroll para o resultado
+                $('html, body').animate({
+                    scrollTop: $('#resultado').offset().top - 100
+                }, 500);
+            }
+        });
+    </script>
+}

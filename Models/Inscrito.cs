@@ -71,6 +71,13 @@ namespace MotoClubeCerrado.Models
         [Column("pagamento")]
         public int Pagamento { get; set; } = 0; // 0 = Pendente, 1 = Confirmado
 
+        [Column("status_inscricao")]
+        public int StatusInscricao { get; set; } = 0; // 0 = Pendente, 1 = Aprovada, 2 = Reprovada
+
+        [Column("numero_piloto")]
+        [MaxLength(3)]
+        public string? NumeroPiloto { get; set; }
+
         [Column("visivel")]
         public int Visivel { get; set; } = 1;
 

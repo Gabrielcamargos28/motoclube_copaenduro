@@ -100,7 +100,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="form-label" for="instagram">Instagram</label>
                                     <div class="form-validation-wrap">
@@ -109,7 +109,17 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="form-label" for="numeropiloto">Número do Piloto</label>
+                                    <div class="form-validation-wrap">
+                                        <input class="form-control" id="inscricao-numeropiloto" type="text" name="numeropiloto" placeholder="Ex: 123" maxlength="3" pattern="[0-9]{1,3}">
+                                        <small class="form-text text-muted">Até 3 dígitos (opcional)</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="form-label" for="telefone">Telefone *</label>
                                     <div class="form-validation-wrap">
@@ -264,6 +274,7 @@
                     Cpf: $('#inscricao-cpf').val().replace(/\D/g, ''),
                     DataNascimento: $('#inscricao-datanascimento').val(),
                     Instagram: $('#inscricao-instagram').val(),
+                    NumeroPiloto: $('#inscricao-numeropiloto').val(),
                     Telefone: $('#inscricao-telefone').val(),
                     Cidade: $('#inscricao-cidade').val(),
                     Uf: $('#inscricao-uf').val(),

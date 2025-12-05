@@ -68,12 +68,14 @@
                             <th>Categoria</th>
                             <th>Nome</th>
                             <th>CPF</th>
+                            <th>Nº Piloto</th>
                             <th>Cidade/UF</th>
                             <th>Telefone</th>
                             <th>Email</th>
                             <th>Valor</th>
                             <th>Data Inscrição</th>
-                            <th>Status</th>
+                            <th>Status Inscrição</th>
+                            <th>Status Pagamento</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
@@ -148,11 +150,16 @@
                     {
                         "data": "cpf",
                         "render": function (data) {
-                            // Formatar CPF: 000.000.000-00
                             if (data && data.length === 11) {
                                 return data.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
                             }
                             return data;
+                        }
+                    },
+                    {
+                        "data": "numeroPiloto",
+                        "render": function (data) {
+                            return data ? '<strong>' + data + '</strong>' : '-';
                         }
                     },
                     {
@@ -164,7 +171,6 @@
                     {
                         "data": "telefone",
                         "render": function (data) {
-                            // Formatar telefone
                             if (data && data.length === 11) {
                                 return data.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
                             } else if (data && data.length === 10) {
@@ -182,12 +188,24 @@
                     },
                     { "data": "dataInscricao" },
                     {
+                        "data": "statusInscricao",
+                        "render": function (data) {
+                            if (data == 0) {
+                                return '<span class="badge badge-warning"><i class="fas fa-clock"></i> Pendente</span>';
+                            } else if (data == 1) {
+                                return '<span class="badge badge-success"><i class="fas fa-check"></i> Aprovada</span>';
+                            } else if (data == 2) {
+                                return '<span class="badge badge-danger"><i class="fas fa-times"></i> Reprovada</span>';
+                            }
+                        }
+                    },
+                    {
                         "data": "pagamento",
                         "render": function (data) {
                             if (data == 1) {
-                                return '<span class="badge badge-success"><i class="fas fa-check"></i> Pago</span>';
+                                return '<span class="badge badge-info"><i class="fas fa-dollar-sign"></i> Pago</span>';
                             } else {
-                                return '<span class="badge badge-warning"><i class="fas fa-clock"></i> Pendente</span>';
+                                return '<span class="badge badge-secondary"><i class="fas fa-clock"></i> Pendente</span>';
                             }
                         }
                     },
@@ -196,14 +214,30 @@
                         "orderable": false,
                         "render": function (data, type, row) {
                             var token = $('input[name="__RequestVerificationToken"]').val();
-                            var btnClass = row.pagamento == 1 ? 'btn-warning' : 'btn-success';
-                            var btnText = row.pagamento == 1 ? '<i class="fas fa-undo"></i> Marcar Pendente' : '<i class="fas fa-check"></i> Marcar Pago';
+                            var btns = '';
 
-                            return '<button class="btn ' + btnClass + ' btn-pagamento btn-toggle-pagamento" ' +
-                                'data-id="' + row.id + '" ' +
-                                'data-token="' + token + '">' +
-                                btnText +
-                                '</button>';
+                            // Botões de aprovação
+                            if (row.statusInscricao == 0 || row.statusInscricao == 2) {
+                                btns += '<button class="btn btn-sm btn-success btn-status mr-1" ' +
+                                    'data-id="' + row.id + '" data-status="1" data-token="' + token + '" title="Aprovar">' +
+                                    '<i class="fas fa-check"></i></button>';
+                            }
+                            if (row.statusInscricao == 0 || row.statusInscricao == 1) {
+                                btns += '<button class="btn btn-sm btn-danger btn-status mr-1" ' +
+                                    'data-id="' + row.id + '" data-status="2" data-token="' + token + '" title="Reprovar">' +
+                                    '<i class="fas fa-times"></i></button>';
+                            }
+
+                            // Botão de pagamento
+                            var btnPagClass = row.pagamento == 1 ? 'btn-warning' : 'btn-primary';
+                            var btnPagIcon = row.pagamento == 1 ? 'fa-undo' : 'fa-dollar-sign';
+                            var btnPagTitle = row.pagamento == 1 ? 'Desmarcar Pagamento' : 'Marcar como Pago';
+
+                            btns += '<button class="btn btn-sm ' + btnPagClass + ' btn-toggle-pagamento" ' +
+                                'data-id="' + row.id + '" data-token="' + token + '" title="' + btnPagTitle + '">' +
+                                '<i class="fas ' + btnPagIcon + '"></i></button>';
+
+                            return btns;
                         }
                     }
                 ],
@@ -262,7 +296,7 @@
                 var token = btn.data('token');
 
                 if (confirm('Deseja alterar o status de pagamento desta inscrição?')) {
-                    btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Processando...');
+                    btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i>');
 
                     $.ajax({
                         url: '/Admin/TogglePagamento/' + inscritoId,
@@ -272,14 +306,50 @@
                         },
                         success: function (response) {
                             if (response.success) {
-                                // Recarregar a tabela
                                 table.ajax.reload(null, false);
-
-                                // Mostrar notificação
                                 var status = response.pagamento == 1 ? 'PAGO' : 'PENDENTE';
-                                alert('Status alterado para: ' + status);
+                                alert('Status de pagamento alterado para: ' + status);
                             } else {
                                 alert('Erro ao alterar status de pagamento');
+                                btn.prop('disabled', false);
+                            }
+                        },
+                        error: function () {
+                            alert('Erro ao processar a requisição');
+                            btn.prop('disabled', false);
+                        }
+                    });
+                }
+            });
+
+            // Alterar status da inscrição (aprovar/reprovar)
+            $('#tabelaInscritos').on('click', '.btn-status', function () {
+                var btn = $(this);
+                var inscritoId = btn.data('id');
+                var novoStatus = btn.data('status');
+                var token = btn.data('token');
+
+                var statusText = novoStatus == 1 ? 'APROVAR' : 'REPROVAR';
+                var confirmMsg = 'Deseja ' + statusText + ' esta inscrição?';
+
+                if (confirm(confirmMsg)) {
+                    btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i>');
+
+                    $.ajax({
+                        url: '/Admin/AlterarStatusInscricao',
+                        type: 'POST',
+                        data: {
+                            id: inscritoId,
+                            novoStatus: novoStatus,
+                            __RequestVerificationToken: token
+                        },
+                        success: function (response) {
+                            if (response.success) {
+                                table.ajax.reload(null, false);
+                                var statusMsg = novoStatus == 1 ? 'APROVADA' : 'REPROVADA';
+                                alert('Inscrição ' + statusMsg + ' com sucesso!');
+                            } else {
+                                alert('Erro ao alterar status da inscrição');
                                 btn.prop('disabled', false);
                             }
                         },

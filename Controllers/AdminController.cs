@@ -341,7 +341,9 @@ http://localhost:5019/Admin/Login
                         uf = i.Uf,
                         email = i.Email,
                         valor = i.Valor,
+                        numeroPiloto = i.NumeroPiloto,
                         pagamento = i.Pagamento,
+                        statusInscricao = i.StatusInscricao,
                         dataInscricao = i.DataInscricao.ToString("dd/MM/yyyy HH:mm"),
                         categoria = i.Categoria!.Nome,
                         etapa = i.Etapa!.Nome
@@ -402,6 +404,22 @@ http://localhost:5019/Admin/Login
                 inscrito.Pagamento = inscrito.Pagamento == 1 ? 0 : 1;
                 await _context.SaveChangesAsync();
                 return Json(new { success = true, pagamento = inscrito.Pagamento });
+            }
+            return Json(new { success = false });
+        }
+
+        // POST: Admin/AlterarStatusInscricao
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AlterarStatusInscricao(int id, int novoStatus)
+        {
+            var inscrito = await _context.Inscritos.FindAsync(id);
+            if (inscrito != null)
+            {
+                inscrito.StatusInscricao = novoStatus;
+                await _context.SaveChangesAsync();
+                return Json(new { success = true, statusInscricao = inscrito.StatusInscricao });
             }
             return Json(new { success = false });
         }
