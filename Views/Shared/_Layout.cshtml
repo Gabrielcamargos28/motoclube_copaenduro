@@ -26,6 +26,145 @@
     <link rel="stylesheet" href="~/assets/css/magnific-popup.css">
     <link rel="stylesheet" href="~/assets/css/spacing.css">
     <link rel="stylesheet" href="~/assets/css/main.css">
+
+    <!-- Custom Styles for Multiple Events Menu -->
+    <style>
+        /* Estilos para menus de eventos */
+        .evento-menu-item .evento-submenu {
+            min-width: 280px;
+            max-height: 550px;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Scrollbar customizado */
+        .evento-submenu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .evento-submenu::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .evento-submenu::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .evento-submenu::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Divisor customizado */
+        .evento-submenu .divider-custom {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        /* Header do submenu */
+        .evento-submenu .submenu-header {
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+            border-bottom: 1px solid #ddd;
+            pointer-events: none;
+        }
+
+        .evento-submenu .submenu-header span {
+            font-weight: 600;
+            font-size: 13px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .evento-submenu .submenu-header i {
+            margin-right: 6px;
+            color: #FF6B6B;
+        }
+
+        /* Items de etapas */
+        .evento-submenu .etapa-item a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .evento-submenu .etapa-item a:hover {
+            background-color: #f8f9fa;
+            padding-left: 25px;
+        }
+
+        .evento-submenu .etapa-item .etapa-nome {
+            flex: 1;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .evento-submenu .etapa-item .etapa-data {
+            font-size: 11px;
+            color: #888;
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        /* Ícones nos links principais */
+        .evento-submenu > li > a i {
+            margin-right: 8px;
+            width: 16px;
+            text-align: center;
+            color: #FF6B6B;
+        }
+
+        /* Ver mais etapas */
+        .evento-submenu .ver-mais-etapas {
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .evento-submenu .ver-mais-etapas a {
+            text-align: center;
+            font-weight: 600;
+            color: #FF6B6B !important;
+            padding: 12px 20px;
+        }
+
+        .evento-submenu .ver-mais-etapas a:hover {
+            background-color: #FF6B6B;
+            color: #fff !important;
+        }
+
+        .evento-submenu .ver-mais-etapas i {
+            margin-right: 6px;
+        }
+
+        /* Ajuste para múltiplos eventos no menu */
+        @media (min-width: 992px) {
+            .evento-menu-item {
+                position: relative;
+            }
+
+            /* Ajuste de largura quando há muitos eventos */
+            .has-dropdown:hover .evento-submenu {
+                display: block;
+            }
+        }
+
+        /* Mobile responsivo */
+        @media (max-width: 991px) {
+            .evento-submenu {
+                max-height: none !important;
+                overflow-y: visible !important;
+            }
+        }
+    </style>
+
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>

@@ -4,21 +4,43 @@
 {
     foreach (var evento in Model)
     {
-        <li class="has-dropdown">
+        <li class="has-dropdown evento-menu-item">
             <a href="#">@evento.Nome</a>
-            <ul class="it-submenu submenu">
-                <li><a href="/Inscricao/Calendario">Calendário</a></li>
-                <li><a href="/Inscricao">Fazer Inscrição</a></li>
-                <li><a href="/Inscricao/Consultar">Consultar Inscrição</a></li>
-                <li><a href="/Inscricao/Inscritos">Inscritos</a></li>
+            <ul class="it-submenu submenu evento-submenu">
+                <li><a href="/Inscricao/Calendario"><i class="far fa-calendar"></i> Calendário</a></li>
+                <li><a href="/Inscricao"><i class="far fa-edit"></i> Fazer Inscrição</a></li>
+                <li><a href="/Inscricao/Consultar"><i class="far fa-search"></i> Consultar Inscrição</a></li>
+                <li><a href="/Inscricao/Inscritos"><i class="far fa-users"></i> Inscritos</a></li>
 
-                @if (evento.Etapas != null && evento.Etapas.Any())
+                @if (evento.Etapas != null && evento.Etapas.Any(e => e.Ativo))
                 {
-                    <li class="divider"></li>
-                    <li class="nav-item-header">Etapas:</li>
-                    foreach (var etapa in evento.Etapas.Where(e => e.Ativo).OrderBy(e => e.DataEvento))
+                    var etapasAtivas = evento.Etapas.Where(e => e.Ativo).OrderBy(e => e.DataEvento).Take(8).ToList();
+
+                    <li class="divider-custom"></li>
+                    <li class="submenu-header">
+                        <span><i class="far fa-flag-checkered"></i> Etapas do Evento</span>
+                    </li>
+
+                    @foreach (var etapa in etapasAtivas)
                     {
-                        <li><a href="/Inscricao/Calendario">@etapa.Nome</a></li>
+                        <li class="etapa-item">
+                            <a href="/Inscricao/Calendario" title="@etapa.Nome">
+                                <span class="etapa-nome">@etapa.Nome</span>
+                                @if (etapa.DataEvento.HasValue)
+                                {
+                                    <span class="etapa-data">@etapa.DataEvento.Value.ToString("dd/MM/yyyy")</span>
+                                }
+                            </a>
+                        </li>
+                    }
+
+                    @if (evento.Etapas.Count(e => e.Ativo) > 8)
+                    {
+                        <li class="ver-mais-etapas">
+                            <a href="/Inscricao/Calendario">
+                                <i class="far fa-plus"></i> Ver todas as etapas
+                            </a>
+                        </li>
                     }
                 }
             </ul>
@@ -28,13 +50,13 @@
 else
 {
     <!-- Fallback caso não haja eventos -->
-    <li class="has-dropdown">
+    <li class="has-dropdown evento-menu-item">
         <a href="#">Copa Cerrado</a>
-        <ul class="it-submenu submenu">
-            <li><a href="/Inscricao/Calendario">Calendário</a></li>
-            <li><a href="/Inscricao">Fazer Inscrição</a></li>
-            <li><a href="/Inscricao/Consultar">Consultar Inscrição</a></li>
-            <li><a href="/Inscricao/Inscritos">Inscritos</a></li>
+        <ul class="it-submenu submenu evento-submenu">
+            <li><a href="/Inscricao/Calendario"><i class="far fa-calendar"></i> Calendário</a></li>
+            <li><a href="/Inscricao"><i class="far fa-edit"></i> Fazer Inscrição</a></li>
+            <li><a href="/Inscricao/Consultar"><i class="far fa-search"></i> Consultar Inscrição</a></li>
+            <li><a href="/Inscricao/Inscritos"><i class="far fa-users"></i> Inscritos</a></li>
         </ul>
     </li>
 }
