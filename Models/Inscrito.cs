@@ -55,7 +55,6 @@ namespace MotoClubeCerrado.Models
         public int IdMineiro { get; set; } = 0;
 
         [Column("valor")]
-        [Column(TypeName = "decimal(10,2)")]
         public decimal Valor { get; set; }
 
         [Required(ErrorMessage = "Email é obrigatório")]

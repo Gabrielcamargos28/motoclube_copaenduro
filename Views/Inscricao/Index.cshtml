@@ -86,7 +86,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="cpf">CPF *</label>
                                     <div class="form-validation-wrap">
-                                        <input class="form-control" id="inscricao-cpf" type="text" name="cpf" placeholder="Digite o seu CPF (somente números)" maxlength="11" required>
+                                        <input class="form-control" id="cpf" type="text" placeholder="Digite apenas os números" maxlength="14" required>
                                     </div>
                                 </div>
                             </div>
@@ -253,7 +253,19 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            // Destruir nice-select nos selects do formulário para usar select nativo
+
+            // Máscara visual para o campo CPF (enquanto digita)
+            $('#cpf').on('input', function () {
+                var value = this.value.replace(/\D/g, '');
+                if (value.length <= 11) {
+                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                    value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                    value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                }
+                this.value = value;
+            });
+            
+            // Remover nice-select para usar o select nativo (Evita conflitos visuais)
             $('#inscricao-idetapa, #inscricao-idcategoria, #inscricao-uf').each(function() {
                 if ($(this).next('.nice-select').length) {
                     $(this).next('.nice-select').remove();
@@ -264,14 +276,38 @@
             $('#frmInscricao').on('submit', function (e) {
                 e.preventDefault();
 
+                // 1. Definição do botão e verificação de segurança
                 var btn = $('#btnSalvarInscricao');
+                
+                // Pega o objeto do campo CPF
+                var campoCpf = $('#cpf');
+                var valorCpf = campoCpf.val();
+
+                // Segurança: Se o campo não existir ou for nulo, para tudo.
+                if (!valorCpf) {
+                    alert('Erro: Campo CPF não encontrado ou vazio.');
+                    return;
+                }
+
+                // Limpa o CPF para validação (apenas números)
+                var cpfLimpo = valorCpf.replace(/\D/g, '');
+                
+                if (cpfLimpo.length !== 11) {
+                    alert('Por favor, digite um CPF válido com 11 dígitos.');
+                    // Garante que o botão não fique travado se der erro de validação
+                    return; 
+                }
+
+                // Bloqueia o botão apenas APÓS passar na validação
                 btn.prop('disabled', true).text('Salvando...');
 
+                // 2. Construção do Objeto (AQUI ESTAVA O ERRO PRINCIPAL)
+                // Corrigido de #inscricao-cpf para #cpf
                 var formData = {
                     IdEtapa: $('#inscricao-idetapa').val(),
                     IdCategoria: $('#inscricao-idcategoria').val(),
                     Nome: $('#inscricao-nome').val(),
-                    Cpf: $('#inscricao-cpf').val().replace(/\D/g, ''),
+                    Cpf: cpfLimpo, // Usa a variável que já limpamos acima
                     DataNascimento: $('#inscricao-datanascimento').val(),
                     Instagram: $('#inscricao-instagram').val(),
                     NumeroPiloto: $('#inscricao-numeropiloto').val(),
@@ -293,25 +329,21 @@
                         if (response.success) {
                             $('#form-output').html('<div class="alert alert-success">' + response.message + '</div>');
                             $('#frmInscricao')[0].reset();
-                            // Scroll para a mensagem de sucesso
                             $('html, body').animate({
                                 scrollTop: $('#form-output').offset().top - 100
                             }, 500);
                         } else {
                             $('#form-output').html('<div class="alert alert-danger">' + response.message + '</div>');
                         }
+                        // Reabilita o botão
                         btn.prop('disabled', false).text('Salvar inscrição');
                     },
                     error: function () {
                         $('#form-output').html('<div class="alert alert-danger">Erro ao processar inscrição. Tente novamente.</div>');
+                        // Reabilita o botão em caso de erro
                         btn.prop('disabled', false).text('Salvar inscrição');
                     }
                 });
-            });
-
-            // Máscara para CPF
-            $('#inscricao-cpf').on('input', function () {
-                this.value = this.value.replace(/\D/g, '');
             });
         });
     </script>
