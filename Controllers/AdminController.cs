@@ -565,5 +565,28 @@ http://localhost:5019/Admin/Login
             }
             return Json(new { success = false });
         }
+
+        // POST: Admin/DeleteInscrito/5
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteInscrito(int id)
+        {
+            try
+            {
+                var inscrito = await _context.Inscritos.FindAsync(id);
+                if (inscrito != null)
+                {
+                    _context.Inscritos.Remove(inscrito);
+                    await _context.SaveChangesAsync();
+                    return Json(new { success = true, message = "Inscrição excluída com sucesso!" });
+                }
+                return Json(new { success = false, message = "Inscrição não encontrada." });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Erro ao excluir inscrição: " + ex.Message });
+            }
+        }
     }
 }
