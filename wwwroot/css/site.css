@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.d-none {
+  display: flex !important;
+}

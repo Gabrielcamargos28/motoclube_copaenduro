@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -23,6 +23,27 @@
   <ItemGroup>
     <Folder Include="Resources\Views\Home\" />
     <Folder Include="Service\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\Migrations\add_eventos.sql" />
+    <None Include="wwwroot\assets\Migrations\add_numero_inscricao.sql" />
+    <None Include="wwwroot\assets\Migrations\add_status_numero_piloto.sql" />
+    <None Include="wwwroot\assets\Migrations\add_unique_cpf_etapa_index.sql" />
+    <None Include="wwwroot\assets\Migrations\create_admin_user.sql" />
+    <None Include="wwwroot\assets\Migrations\create_database.sql" />
+    <None Include="wwwroot\assets\Migrations\diagnostico.sql" />
+    <None Include="wwwroot\assets\Migrations\README.md" />
+    <None Include="wwwroot\assets\Migrations\setup_identity_and_admin.sql" />
+    <None Include="wwwroot\assets\Migrations\TROUBLESHOOTING_LOGIN.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="wwwroot\assets\Migrations\20251205230431_InitialCreate.cs" />
+    <Compile Include="wwwroot\assets\Migrations\20251205230431_InitialCreate.Designer.cs" />
+    <Compile Include="wwwroot\assets\Migrations\20251205231038_NewMigration.cs" />
+    <Compile Include="wwwroot\assets\Migrations\20251205231038_NewMigration.Designer.cs" />
+    <Compile Include="wwwroot\assets\Migrations\ApplicationDbContextModelSnapshot.cs" />
   </ItemGroup>
 
 </Project>
