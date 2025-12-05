@@ -1,0 +1,94 @@
+@model IEnumerable<MotoClubeCerrado.Models.Etapa>
+@{
+    ViewData["Title"] = "Etapas do Evento";
+    Layout = "_AdminLayout";
+    var evento = ViewBag.Evento as MotoClubeCerrado.Models.Evento;
+}
+
+<div class="container-fluid">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <h2>Etapas do Evento: @evento?.Nome</h2>
+            <p class="text-muted">Ano: @evento?.Ano</p>
+            <a href="@Url.Action("Eventos")" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Voltar para Eventos
+            </a>
+            <a href="@Url.Action("CreateEtapa")" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Nova Etapa
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Data</th>
+                                <th>Local</th>
+                                <th>Status</th>
+                                <th>Inscrições</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var etapa in Model)
+                            {
+                                <tr>
+                                    <td><strong>@etapa.Nome</strong></td>
+                                    <td>@etapa.DataEvento?.ToString("dd/MM/yyyy")</td>
+                                    <td>@etapa.Local</td>
+                                    <td>
+                                        @if (etapa.Ativo)
+                                        {
+                                            <span class="badge badge-success">Ativo</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-secondary">Inativo</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (etapa.InscricoesAbertas)
+                                        {
+                                            <span class="badge badge-info">Abertas</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-warning">Fechadas</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <a href="@Url.Action("InscritosEtapa", new { id = etapa.Id })" class="btn btn-info" title="Ver Inscritos">
+                                                <i class="fas fa-users"></i>
+                                            </a>
+                                            <a href="@Url.Action("EditEtapa", new { id = etapa.Id })" class="btn btn-warning" title="Editar">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> Nenhuma etapa cadastrada para este evento.
+                    <a href="@Url.Action("CreateEtapa")" class="alert-link">Clique aqui para criar a primeira etapa</a>.
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+}

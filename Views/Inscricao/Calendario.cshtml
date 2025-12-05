@@ -1,6 +1,6 @@
-@model List<MotoClubeCerrado.Models.Etapa>
+@model List<MotoClubeCerrado.Models.Evento>
 @{
-    ViewData["Title"] = "Calendário - Copa Cerrado de Enduro";
+    ViewData["Title"] = "Calendário - Eventos e Etapas";
 }
 
 <section class="section breadcrumb-section" style="background-image: url(/images/image-10-1920x232.jpg)">
@@ -17,51 +17,95 @@
 
 <section class="section-md bg-transparent">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="mb-4">Etapas Copa Cerrado de Enduro 2025</h2>
-                @if (Model != null && Model.Any())
-                {
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Etapa</th>
-                                    <th>Data</th>
-                                    <th>Local</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var etapa in Model)
-                                {
-                                    <tr>
-                                        <td>@etapa.Nome</td>
-                                        <td>@etapa.DataEvento?.ToString("dd/MM/yyyy")</td>
-                                        <td>@etapa.Local</td>
-                                        <td>
-                                            @if (etapa.InscricoesAbertas)
-                                            {
-                                                <span class=" badge-success">Inscrições Abertas</span>
-                                            }
-                                            else
-                                            {
-                                                <span class=" badge-secondary">Inscrições Encerradas</span>
-                                            }
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var evento in Model)
+            {
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="mb-3">@evento.Nome</h2>
+                        @if (!string.IsNullOrEmpty(evento.Descricao))
+                        {
+                            <p class="text-muted mb-4">@evento.Descricao</p>
+                        }
+
+                        @if (evento.Etapas != null && evento.Etapas.Any(e => e.Ativo))
+                        {
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Etapa</th>
+                                            <th>Data</th>
+                                            <th>Local</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var etapa in evento.Etapas.Where(e => e.Ativo).OrderBy(e => e.DataEvento))
+                                        {
+                                            <tr>
+                                                <td><strong>@etapa.Nome</strong></td>
+                                                <td>@etapa.DataEvento?.ToString("dd/MM/yyyy")</td>
+                                                <td>@etapa.Local</td>
+                                                <td>
+                                                    @if (etapa.InscricoesAbertas)
+                                                    {
+                                                        <span class="badge badge-success">Inscrições Abertas</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge badge-secondary">Inscrições Encerradas</span>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-info">
+                                Nenhuma etapa cadastrada para este evento no momento.
+                            </div>
+                        }
                     </div>
-                }
-                else
-                {
+                </div>
+            }
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4">Calendário de Eventos</h2>
                     <div class="alert alert-info">
-                        Nenhuma etapa cadastrada no momento.
+                        Nenhum evento cadastrado no momento.
                     </div>
-                }
+                </div>
             </div>
-        </div>
+        }
     </div>
 </section>
+
+@section Styles {
+    <style>
+        .badge {
+            padding: 8px 15px;
+            font-size: 0.9em;
+            border-radius: 20px;
+        }
+        .badge-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .badge-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        .thead-dark th {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+}

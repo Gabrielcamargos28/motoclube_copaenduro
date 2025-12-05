@@ -15,6 +15,7 @@ namespace MotoClubeCerrado.Data
         public DbSet<Inscrito> Inscritos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Etapa> Etapas { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -32,6 +33,12 @@ namespace MotoClubeCerrado.Data
                 .WithMany(e => e.Inscritos)
                 .HasForeignKey(i => i.IdEtapa)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Etapa>()
+                .HasOne(e => e.Evento)
+                .WithMany(ev => ev.Etapas)
+                .HasForeignKey(e => e.IdEvento)
+                .OnDelete(DeleteBehavior.SetNull);
 
             // Seed de dados iniciais - Categorias
             modelBuilder.Entity<Categoria>().HasData(
