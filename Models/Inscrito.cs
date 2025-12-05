@@ -10,6 +10,10 @@ namespace MotoClubeCerrado.Models
         [Column("id")]
         public int Id { get; set; }
 
+        [Column("numero_inscricao")]
+        [MaxLength(20)]
+        public string? NumeroInscricao { get; set; }
+
         [Required(ErrorMessage = "Nome é obrigatório")]
         [Column("nome")]
         [MaxLength(200)]

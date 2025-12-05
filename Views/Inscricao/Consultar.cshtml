@@ -245,6 +245,11 @@
                     html += '  </div>';
 
                     html += '  <div class="info-row"><span class="info-label">Nome:</span> <span class="info-value">' + insc.nome + '</span></div>';
+
+                    if (insc.numeroInscricao) {
+                        html += '  <div class="info-row"><span class="info-label">Número da Inscrição:</span> <span class="info-value"><strong>' + insc.numeroInscricao + '</strong></span></div>';
+                    }
+
                     html += '  <div class="info-row"><span class="info-label">Categoria:</span> <span class="info-value">' + insc.categoria + '</span></div>';
 
                     if (insc.numeroPiloto) {

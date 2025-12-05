@@ -334,6 +334,7 @@ http://localhost:5019/Admin/Login
                     .Select(i => new
                     {
                         id = i.Id,
+                        numeroInscricao = i.NumeroInscricao,
                         nome = i.Nome,
                         cpf = i.Cpf,
                         telefone = i.Telefone,
