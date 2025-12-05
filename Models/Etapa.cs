@@ -10,6 +10,9 @@ namespace MotoClubeCerrado.Models
         [Column("id")]
         public int Id { get; set; }
 
+        [Column("id_evento")]
+        public int? IdEvento { get; set; }
+
         [Required]
         [Column("nome")]
         [MaxLength(200)]
@@ -32,7 +35,10 @@ namespace MotoClubeCerrado.Models
         [Column("inscricoes_abertas")]
         public bool InscricoesAbertas { get; set; } = true;
 
-        // Navigation property
+        // Navigation properties
+        [ForeignKey("IdEvento")]
+        public virtual Evento? Evento { get; set; }
+
         public virtual ICollection<Inscrito> Inscritos { get; set; } = new List<Inscrito>();
     }
 }

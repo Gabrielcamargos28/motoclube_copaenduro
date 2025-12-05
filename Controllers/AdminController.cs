@@ -196,11 +196,136 @@ http://localhost:5019/Admin/Login
             return View();
         }
 
+        // ========== EVENTOS ==========
+
+        // GET: Admin/Eventos
+        [Authorize]
+        public async Task<IActionResult> Eventos()
+        {
+            var eventos = await _context.Eventos
+                .OrderByDescending(e => e.Ano)
+                .ThenBy(e => e.Ordem)
+                .ToListAsync();
+            return View(eventos);
+        }
+
+        // GET: Admin/CreateEvento
+        [Authorize]
+        public IActionResult CreateEvento()
+        {
+            return View();
+        }
+
+        // POST: Admin/CreateEvento
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateEvento(Evento evento)
+        {
+            if (ModelState.IsValid)
+            {
+                evento.DataCriacao = DateTime.Now;
+                _context.Eventos.Add(evento);
+                await _context.SaveChangesAsync();
+                TempData["Success"] = "Evento criado com sucesso!";
+                return RedirectToAction(nameof(Eventos));
+            }
+            return View(evento);
+        }
+
+        // GET: Admin/EditEvento/5
+        [Authorize]
+        public async Task<IActionResult> EditEvento(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var evento = await _context.Eventos.FindAsync(id);
+            if (evento == null)
+            {
+                return NotFound();
+            }
+            return View(evento);
+        }
+
+        // POST: Admin/EditEvento/5
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditEvento(int id, Evento evento)
+        {
+            if (id != evento.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(evento);
+                    await _context.SaveChangesAsync();
+                    TempData["Success"] = "Evento atualizado com sucesso!";
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.Eventos.Any(e => e.Id == evento.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Eventos));
+            }
+            return View(evento);
+        }
+
+        // POST: Admin/DeleteEvento/5
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteEvento(int id)
+        {
+            var evento = await _context.Eventos.FindAsync(id);
+            if (evento != null)
+            {
+                _context.Eventos.Remove(evento);
+                await _context.SaveChangesAsync();
+                TempData["Success"] = "Evento excluído com sucesso!";
+            }
+            return RedirectToAction(nameof(Eventos));
+        }
+
+        // GET: Admin/EventoEtapas/5
+        [Authorize]
+        public async Task<IActionResult> EventoEtapas(int id)
+        {
+            var evento = await _context.Eventos
+                .Include(e => e.Etapas)
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (evento == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.Evento = evento;
+            return View(evento.Etapas?.OrderBy(e => e.DataEvento).ToList());
+        }
+
+        // ========== ETAPAS ==========
+
         // GET: Admin/Etapas
         [Authorize]
         public async Task<IActionResult>Etapas()
         {
             var etapas = await _context.Etapas
+                .Include(e => e.Evento)
                 .OrderByDescending(e => e.DataEvento)
                 .ToListAsync();
             return View(etapas);
@@ -208,8 +333,12 @@ http://localhost:5019/Admin/Login
 
         // GET: Admin/CreateEtapa
         [Authorize]
-        public IActionResult CreateEtapa()
+        public async Task<IActionResult> CreateEtapa()
         {
+            ViewBag.Eventos = await _context.Eventos
+                .Where(e => e.Ativo)
+                .OrderByDescending(e => e.Ano)
+                .ToListAsync();
             return View();
         }
 
@@ -226,6 +355,10 @@ http://localhost:5019/Admin/Login
                 TempData["Success"] = "Etapa criada com sucesso!";
                 return RedirectToAction(nameof(Etapas));
             }
+            ViewBag.Eventos = await _context.Eventos
+                .Where(e => e.Ativo)
+                .OrderByDescending(e => e.Ano)
+                .ToListAsync();
             return View(etapa);
         }
 
@@ -243,6 +376,10 @@ http://localhost:5019/Admin/Login
             {
                 return NotFound();
             }
+            ViewBag.Eventos = await _context.Eventos
+                .Where(e => e.Ativo)
+                .OrderByDescending(e => e.Ano)
+                .ToListAsync();
             return View(etapa);
         }
 
@@ -278,6 +415,10 @@ http://localhost:5019/Admin/Login
                 }
                 return RedirectToAction(nameof(Etapas));
             }
+            ViewBag.Eventos = await _context.Eventos
+                .Where(e => e.Ativo)
+                .OrderByDescending(e => e.Ano)
+                .ToListAsync();
             return View(etapa);
         }
 

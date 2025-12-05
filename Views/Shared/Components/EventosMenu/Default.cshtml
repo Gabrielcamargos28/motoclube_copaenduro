@@ -1,0 +1,40 @@
+@model IEnumerable<MotoClubeCerrado.Models.Evento>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var evento in Model)
+    {
+        <li class="has-dropdown">
+            <a href="#">@evento.Nome</a>
+            <ul class="it-submenu submenu">
+                <li><a href="/Inscricao/Calendario">Calendário</a></li>
+                <li><a href="/Inscricao">Fazer Inscrição</a></li>
+                <li><a href="/Inscricao/Consultar">Consultar Inscrição</a></li>
+                <li><a href="/Inscricao/Inscritos">Inscritos</a></li>
+
+                @if (evento.Etapas != null && evento.Etapas.Any())
+                {
+                    <li class="divider"></li>
+                    <li class="nav-item-header">Etapas:</li>
+                    foreach (var etapa in evento.Etapas.Where(e => e.Ativo).OrderBy(e => e.DataEvento))
+                    {
+                        <li><a href="/Inscricao/Calendario">@etapa.Nome</a></li>
+                    }
+                }
+            </ul>
+        </li>
+    }
+}
+else
+{
+    <!-- Fallback caso não haja eventos -->
+    <li class="has-dropdown">
+        <a href="#">Copa Cerrado</a>
+        <ul class="it-submenu submenu">
+            <li><a href="/Inscricao/Calendario">Calendário</a></li>
+            <li><a href="/Inscricao">Fazer Inscrição</a></li>
+            <li><a href="/Inscricao/Consultar">Consultar Inscrição</a></li>
+            <li><a href="/Inscricao/Inscritos">Inscritos</a></li>
+        </ul>
+    </li>
+}

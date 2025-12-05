@@ -215,12 +215,14 @@ namespace MotoClubeCerrado.Controllers
         // GET: Inscricao/Calendario
         public async Task<IActionResult> Calendario()
         {
-            var etapas = await _context.Etapas
+            var eventos = await _context.Eventos
                 .Where(e => e.Ativo)
-                .OrderBy(e => e.DataEvento)
+                .Include(e => e.Etapas)
+                .OrderByDescending(e => e.Ano)
+                .ThenBy(e => e.Ordem)
                 .ToListAsync();
 
-            return View(etapas);
+            return View(eventos);
         }
 
         // GET: Inscricao/Consultar
