@@ -66,6 +66,9 @@ namespace MotoClubeCerrado.Controllers
 
                 inscrito.DataInscricao = DateTime.Now;
 
+                // Gerar número de inscrição único
+                inscrito.NumeroInscricao = await GerarNumeroInscricaoUnico();
+
                 // Gerar valor com centavos únicos para identificação
                 var ultimoInscrito = await _context.Inscritos
                     .Where(i => i.IdEtapa == inscrito.IdEtapa)
@@ -92,7 +95,8 @@ namespace MotoClubeCerrado.Controllers
 
                 return Json(new {
                     success = true,
-                    message = $"Inscrição realizada com sucesso na {etapa.Nome}! Valor para pagamento: R$ {inscrito.Valor:F2}",
+                    message = $"Inscrição realizada com sucesso na {etapa.Nome}!\n\nNúmero da Inscrição: {inscrito.NumeroInscricao}\nValor para pagamento: R$ {inscrito.Valor:F2}",
+                    numeroInscricao = inscrito.NumeroInscricao,
                     valor = inscrito.Valor
                 });
             }
@@ -164,6 +168,7 @@ namespace MotoClubeCerrado.Controllers
                     .Select(i => new
                     {
                         id = i.Id,
+                        numeroInscricao = i.NumeroInscricao,
                         nome = i.Nome,
                         cpf = i.Cpf,
                         telefone = i.Telefone,
@@ -255,6 +260,7 @@ namespace MotoClubeCerrado.Controllers
                         etapa = i.Etapa!.Nome,
                         dataEtapa = i.Etapa!.DataEvento,
                         valor = i.Valor,
+                        numeroInscricao = i.NumeroInscricao,
                         numeroPiloto = i.NumeroPiloto,
                         dataInscricao = i.DataInscricao,
                         pagamento = i.Pagamento,
@@ -273,6 +279,37 @@ namespace MotoClubeCerrado.Controllers
             {
                 return Json(new { success = false, message = "Erro ao consultar inscrição: " + ex.Message });
             }
+        }
+
+        // Método auxiliar para gerar número de inscrição único
+        private async Task<string> GerarNumeroInscricaoUnico()
+        {
+            string numeroInscricao;
+            bool existe;
+            int tentativas = 0;
+            const int maxTentativas = 100;
+
+            do
+            {
+                // Gera número no formato YYYY-NNNNNN (ano + 6 dígitos aleatórios)
+                var ano = DateTime.Now.Year;
+                var numeroAleatorio = Random.Shared.Next(100000, 999999);
+                numeroInscricao = $"{ano}-{numeroAleatorio}";
+
+                // Verifica se já existe no banco
+                existe = await _context.Inscritos.AnyAsync(i => i.NumeroInscricao == numeroInscricao);
+
+                tentativas++;
+                if (tentativas >= maxTentativas)
+                {
+                    // Fallback: usa timestamp se não conseguir gerar número único
+                    numeroInscricao = $"{ano}-{DateTimeOffset.Now.ToUnixTimeMilliseconds() % 1000000:D6}";
+                    break;
+                }
+            }
+            while (existe);
+
+            return numeroInscricao;
         }
     }
 }

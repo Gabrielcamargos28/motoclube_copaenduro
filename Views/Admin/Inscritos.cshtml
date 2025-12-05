@@ -64,6 +64,7 @@
                 <table id="tabelaInscritos" class="table table-striped table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
+                            <th>Nº Inscrição</th>
                             <th>Etapa</th>
                             <th>Categoria</th>
                             <th>Nome</th>
@@ -144,6 +145,12 @@
                     "dataSrc": "data"
                 },
                 "columns": [
+                    {
+                        "data": "numeroInscricao",
+                        "render": function (data) {
+                            return data ? '<span class="badge badge-info">' + data + '</span>' : '-';
+                        }
+                    },
                     { "data": "etapa" },
                     { "data": "categoria" },
                     { "data": "nome" },

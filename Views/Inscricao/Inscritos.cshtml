@@ -48,6 +48,7 @@
                             <table id="idTabelaInscritos" class="table table-hover text-nowrap">
                                 <thead>
                                     <tr>
+                                        <th>Nº Inscrição</th>
                                         <th>Etapa</th>
                                         <th>Categoria</th>
                                         <th>Nome</th>
@@ -121,6 +122,12 @@
                     "dataSrc": "data"
                 },
                 "columns": [
+                    {
+                        "data": "numeroInscricao",
+                        "render": function (data) {
+                            return data ? '<strong>' + data + '</strong>' : '-';
+                        }
+                    },
                     { "data": "etapa" },
                     { "data": "categoria" },
                     { "data": "nome" },
