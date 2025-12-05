@@ -11578,6 +11578,20 @@ input[type=color] {
 .it-menu-mobile .it-menu-content {
   margin-bottom: 70px;
 }
+
+.it-menu-content {
+  display: flex;
+  flex-direction: column; /* Coloca um item embaixo do outro */
+  align-items: center;    /* Centraliza tudo horizontalmente */
+  justify-content: center;
+}
+
+/* Garante que o menu (ul) não tenha paddings estranhos */
+.it-menu-content ul {
+  padding: 0;
+  margin-bottom: 10px; /* Espaço entre menu e logo */
+}
+
 .it-menu-mobile .home-img {
   margin-bottom: 40px;
 }

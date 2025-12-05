@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/OszoOL3Sme34C+ZfVLOyN80uLWJfxAic+f8cv9D1TE=",
+  "Hash": "4qk/DJL3UvdsPt3F57l1w1KZaAyAA3nK0imfWgMm+Pw=",
   "Source": "MotoClubeCerrado",
   "BasePath": "_content/MotoClubeCerrado",
   "Mode": "Default",
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "x5qh89vj1b",
-      "Integrity": "tRoozYyGi+VqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ=",
+      "Fingerprint": "45v4ayb8ge",
+      "Integrity": "qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\main.css"
@@ -12181,6 +12181,51 @@
       ]
     },
     {
+      "Route": "assets/css/main.45v4ayb8ge.css",
+      "AssetFile": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "304639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 05 Dec 2025 01:23:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "45v4ayb8ge"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4="
+        }
+      ]
+    },
+    {
       "Route": "assets/css/main.css",
       "AssetFile": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\main.css",
       "Selectors": [],
@@ -12191,7 +12236,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "291615"
+          "Value": "304639"
         },
         {
           "Name": "Content-Type",
@@ -12199,11 +12244,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tRoozYyGi+VqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ=\""
+          "Value": "\"qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 18:46:26 GMT"
+          "Value": "Fri, 05 Dec 2025 01:23:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12213,7 +12258,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tRoozYyGi+VqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ="
+          "Value": "sha256-qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4="
         }
       ]
     },
@@ -12296,51 +12341,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-fLDrQ+VVC9ikwQnB5Ru0Fa2FX1qilzCuvDPxt9exQM8="
-        }
-      ]
-    },
-    {
-      "Route": "assets/css/main.x5qh89vj1b.css",
-      "AssetFile": "C:\\Users\\gabrielcamargos\\projetos\\motoclubeAtt\\MotoClubeCerrado\\MotoClubeCerrado\\wwwroot\\assets\\css\\main.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "291615"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tRoozYyGi+VqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 01 Aug 2024 18:46:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "x5qh89vj1b"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/css/main.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tRoozYyGi+VqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ="
         }
       ]
     },

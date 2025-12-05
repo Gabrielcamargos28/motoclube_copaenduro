@@ -108,11 +108,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RdH19s\u002BRN0bEXdaXsajztxnALYs/Z43H/Cdm1U4ar24="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6951"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RdH19s\u002BRN0bEXdaXsajztxnALYs/Z43H/Cdm1U4ar24=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Aug 2024 18:46:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MotoClubeCerrado/assets/css/main.45v4ayb8ge.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\main.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"45v4ayb8ge"},{"Name":"integrity","Value":"sha256-qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4="},{"Name":"label","Value":"_content/MotoClubeCerrado/assets/css/main.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"304639"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 05 Dec 2025 01:23:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MotoClubeCerrado/assets/css/main.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tRoozYyGi\u002BVqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"291615"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tRoozYyGi\u002BVqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Aug 2024 18:46:26 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"304639"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qDi90L5r1/ZWQ/INTxGQLe2KH4w0frr6KFF8QS/jem4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 05 Dec 2025 01:23:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MotoClubeCerrado/assets/css/main.css.kwnyycd3ix.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\main.css.map'))</AssetFile>
@@ -125,12 +131,6 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fLDrQ\u002BVVC9ikwQnB5Ru0Fa2FX1qilzCuvDPxt9exQM8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"54641"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022fLDrQ\u002BVVC9ikwQnB5Ru0Fa2FX1qilzCuvDPxt9exQM8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Aug 2024 18:46:27 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MotoClubeCerrado/assets/css/main.x5qh89vj1b.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\main.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x5qh89vj1b"},{"Name":"integrity","Value":"sha256-tRoozYyGi\u002BVqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ="},{"Name":"label","Value":"_content/MotoClubeCerrado/assets/css/main.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"291615"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tRoozYyGi\u002BVqWStnHlby2jBPV2pjj3aN9/Zhcx70hqQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 Aug 2024 18:46:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MotoClubeCerrado/assets/css/meanmenu.af9cwtrn12.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\css\meanmenu.css'))</AssetFile>

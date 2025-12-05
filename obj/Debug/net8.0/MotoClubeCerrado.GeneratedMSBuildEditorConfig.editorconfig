@@ -20,6 +20,38 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/CreateEtapa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlRXRhcGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/EditEtapa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEV0YXBhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/Etapas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXRhcGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/Inscritos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5zY3JpdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/InscritosEtapa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5zY3JpdG9zRXRhcGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Admin/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0FkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Home/Atas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdGFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -82,6 +114,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Home/Sobre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb2JyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Inscricao/Calendario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXENhbGVuZGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Inscricao/Consultar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXENvbnN1bHRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Inscricao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Inscricao/Inscritos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXEluc2NyaXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabrielcamargos/projetos/motoclubeAtt/MotoClubeCerrado/MotoClubeCerrado/Views/Shared/Error.cshtml]
