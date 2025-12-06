@@ -2,16 +2,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MotoClubeCerrado.Data;
 using MotoClubeCerrado.Models;
+using MotoClubeCerrado.Service;
 
 namespace MotoClubeCerrado.Controllers
 {
     public class InscricaoController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly EmailService _emailService;
 
-        public InscricaoController(ApplicationDbContext context)
+        public InscricaoController(ApplicationDbContext context, EmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         // GET: Inscricao
@@ -92,6 +95,19 @@ namespace MotoClubeCerrado.Controllers
 
                 _context.Inscritos.Add(inscrito);
                 await _context.SaveChangesAsync();
+                
+                // Envio de e-mail de confirmação
+                
+                string assunto = "Confirmação de Inscrição";
+                string mensagem = $@"
+                    <h2>Inscrição realizada com sucesso!</h2>
+                    <p>Olá, {inscrito.Nome}!</p>
+                    <p>Sua inscrição na etapa <strong>{etapa.Nome}</strong> foi realizada com sucesso.</p>
+                    <p><strong>Número da inscrição:</strong> {inscrito.NumeroInscricao}</p>
+                    <p><strong>Valor para pagamento:</strong> R$ {inscrito.Valor:F2}</p>
+                ";
+
+                await _emailService.EnviarEmailAsync(inscrito.Email, assunto, mensagem);
 
                 return Json(new {
                     success = true,

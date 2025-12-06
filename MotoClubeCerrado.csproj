@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\Views\Home\" />
-    <Folder Include="Service\" />
   </ItemGroup>
 
   <ItemGroup>

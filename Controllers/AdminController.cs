@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MotoClubeCerrado.Data;
 using MotoClubeCerrado.Models;
+using MotoClubeCerrado.Service;
 
 namespace MotoClubeCerrado.Controllers
 {
@@ -12,15 +13,18 @@ namespace MotoClubeCerrado.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
+        private readonly EmailService _emailService;
 
         public AdminController(
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
-            ApplicationDbContext context)
+            ApplicationDbContext context,
+            EmailService emailService)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _context = context;
+            _emailService = emailService;
         }
 
         // GET: Admin/Test (para debug)
@@ -540,11 +544,36 @@ http://localhost:5019/Admin/Login
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> TogglePagamento(int id)
         {
-            var inscrito = await _context.Inscritos.FindAsync(id);
+            var inscrito = await _context.Inscritos
+                .Include(i => i.Etapa)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
             if (inscrito != null)
             {
+                
+                bool estavaPendente = inscrito.Pagamento == 0;
+                
                 inscrito.Pagamento = inscrito.Pagamento == 1 ? 0 : 1;
                 await _context.SaveChangesAsync();
+                
+                //
+                // Envio de e-mail confirmação de pagamento
+                //
+                
+                string assuntoPagamento = "Confirmação de Inscrição";
+                string mensagemPagamento = $@"
+                    <h2>Pagamento Confirmado!</h2>
+                    <p>Olá, {inscrito.Nome}!</p>
+                    <p>Sua inscrição na etapa <strong>{inscrito.Etapa.Nome}</strong> foi realizada com sucesso.</p>
+                    <p><strong>Número da inscrição:</strong> {inscrito.NumeroInscricao}</p>
+                    <p><strong>Valor para pagamento:</strong> R$ {inscrito.Valor:F2}</p>
+                ";
+
+                if (estavaPendente)
+                {
+                    await _emailService.EnviarEmailAsync(inscrito.Email, assuntoPagamento, mensagemPagamento);
+                    
+                }
                 return Json(new { success = true, pagamento = inscrito.Pagamento });
             }
             return Json(new { success = false });
@@ -561,6 +590,43 @@ http://localhost:5019/Admin/Login
             {
                 inscrito.StatusInscricao = novoStatus;
                 await _context.SaveChangesAsync();
+                
+                //
+                // Envio de e-mail confirmação da inscrição
+                //
+                
+                try
+                {
+                    string assuntoConfirmacao = "";
+                    string mensagemConfirmacao = "";
+
+                    if (novoStatus == 1) // APROVADO
+                    {
+                        assuntoConfirmacao = "Inscrição aprovada - Copa Cerrado";
+                        mensagemConfirmacao = $@"
+                            <h3>Olá {inscrito.Nome},</h3>
+                            <p>Sua inscrição foi <strong style='color:green'>APROVADA</strong>!</p>
+                            <p>Número da Inscrição: <strong>{inscrito.NumeroInscricao}</strong></p>
+                            <p>Obrigado por participar!</p>
+                        ";
+                    }
+                    else // REPROVADO
+                    {
+                        assuntoConfirmacao = "Inscrição reprovada - Copa Cerrado";
+                        mensagemConfirmacao = $@"
+                            <h3>Olá {inscrito.Nome},</h3>
+                            <p>Sua inscrição foi <strong style='color:red'>REPROVADA</strong>.</p>
+                            <p>Entre em contato caso queira mais informações.</p>
+                        ";
+                    }
+
+                    await _emailService.EnviarEmailAsync(inscrito.Email, assuntoConfirmacao, mensagemConfirmacao);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erro ao enviar e-mail: " + ex.Message);
+                }
+                
                 return Json(new { success = true, statusInscricao = inscrito.StatusInscricao });
             }
             return Json(new { success = false });

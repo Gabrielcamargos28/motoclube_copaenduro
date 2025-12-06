@@ -3,14 +3,17 @@ using MotoClubeCerrado.Models;
 using System.Diagnostics;
 using System.Net;
 using System.Net.Mail;
+using MotoClubeCerrado.Service;
 
 namespace MotoClubeCerrado.Controllers
 {
     public class HomeController : Controller
     {
 
-        public HomeController()
+        private readonly EmailService _emailService;
+        public HomeController(EmailService emailService)
         {
+            _emailService = emailService;
         }
 
         public IActionResult Index()
@@ -96,11 +99,14 @@ namespace MotoClubeCerrado.Controllers
                 ViewData["message"] = "Informações inválidas!";
                 return View("Contato", model);
             }
-
-
-            string retorno = EnviaEmail(model);
-
-            if (String.IsNullOrEmpty(retorno))
+            
+            string body = "<p>Nome: " + model.Nome + "</p><p>E-mail: " + model.Email + "</p>" +
+                      "<p>Telefone: " + model.Telefone + "</p><p> Assunto: " + 
+                      model.Assunto + "</p><p> Mensagem: " + model.Mensagem + "</p>";
+            
+            Task<bool> retorno = _emailService.EnviarEmailAsync("viniciusgabrielpe@gmail.com", model.Assunto, body);
+            
+            if (retorno.Result)
             {
                 ViewData["msgsucesso"] = "E-mail enviado com sucesso";
 
@@ -111,36 +117,6 @@ namespace MotoClubeCerrado.Controllers
                 ViewData["message"] = retorno;
                 return View("Contato", model);
 
-            }
-        }
-
-        public string EnviaEmail(ContatoViewModel model)
-        {
-            try
-            {
-                using (MailMessage mm = new MailMessage("contato@motoclubedocerrado.esp.br", "contato@motoclubedocerrado.esp.br"))
-                {
-                    mm.Subject = model.Assunto;
-                    mm.CC.Add("motoclubedocerrado@gmail.com");
-                    mm.Body = "<p>Nome: " + model.Nome + "</p><p>E-mail: " + model.Email + "</p>" +
-                "<p>Telefone: " + model.Telefone + "</p><p> Mensagem: " + model.Mensagem + "</p>";
-
-                    mm.IsBodyHtml = true;
-                    SmtpClient smtp = new SmtpClient();
-                    smtp.Host = "relay-hosting.secureserver.net";
-                    smtp.EnableSsl = false;
-                    NetworkCredential NetworkCred = new NetworkCredential("", "");
-                    smtp.Credentials = NetworkCred;
-                    smtp.Port = 25;
-                    smtp.Send(mm);
-
-                }
-
-                return "";
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
             }
         }
 
